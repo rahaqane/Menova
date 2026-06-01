@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@theme {
+ --font-DanaFaNum: "dana", sans-serif;
+
+    /* color palette */
+/* --- Core Brand Colors --- */
+    --color-primary:#E6C89C;
+    --color-primary-dark:#D19B4B;
+    --color-accent-orange:#F75F00;
+    --color-accent-gold:#E5CE39;
+
+
+/* --- Surface & Backgrounds --- */
+    --color-bg: #0C1220;
+    --color-surface:#121A2E;
+    --color-surface-elevated:#18213A;
+    --color-surface-icon:#242F4F;
+
+
+/* --- Text Hierarchy --- */
+    --color-txt-main:#E9EDF5;
+    --color-txt-muted: #D7DCE5;
+    --color-txt-placeholder:#7A84A3;
+    --color-txt-brand:#EBD3B0;
+    --color-txt-cta:#D6B887;
+    --color-txt-caption:#B3BCD4;
+    --color-off:#4C4741;
+    --color-border-main:#9AA6C5;
+} 
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 10;
+	src: url('../fonts/woff2/Dana-Hairline.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/Dana-Hairline.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/woff2/Dana-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/Dana-Thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/woff2/Dana-UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/Dana-UltraLight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Webfonts/fonts/woff2/Dana-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/Webfonts/fonts/woff/Dana-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/Webfonts/fonts/woff2/Dana-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/Webfonts/fonts/woff/Dana-Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/Webfonts/fonts/woff2/Dana-DemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/Webfonts/fonts/woff/Dana-DemiBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/Webfonts/fonts/woff2/Dana-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/Webfonts/fonts/woff/Dana-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: "dana";
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/Webfonts/fonts/woff2/Dana-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/Webfonts/fonts/woff/Dana-Black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@theme {
+ --font-dana: "dana", sans-serif;
+
+    /* color palette */
+/* --- Core Brand Colors --- */
+    --color-primary:#E6C89C;
+    --color-primary-dark:#D19B4B;
+    --color-accent-orange:#F75F00;
+    --color-accent-gold:#E5CE39;
+
+
+/* --- Surface & Backgrounds --- */
+    --color-bg: #0C1220;
+    --color-surface:#121A2E;
+    --color-surface-elevated:#18213A;
+    --color-surface-icon:#242F4F;
+
+
+/* --- Text Hierarchy --- */
+    --color-txt-main:#E9EDF5;
+    --color-txt-muted: #D7DCE5;
+    --color-txt-placeholder:#7A84A3;
+    --color-txt-brand:#EBD3B0;
+    --color-txt-cta:#D6B887;
+    --color-txt-caption:#B3BCD4;
+    --color-off:#4C4741;
+    --color-border-main:#9AA6C5;
+} 
+@layer base {
+ body {
+    @apply font-dana
+  }
+}
+@layer components{
+    .btn-signIn{
+        @apply flex justify-center items-center whitespace-nowrap bg-primary text-bg py-2 px-4 rounded-lg hover:bg-transparent hover:text-primary hover:border hover:border-primary
+    }
+    .navbar-items{
+        @apply text-txt-muted text-[16px] font-medium hover:text-txt-cta
+    }
+    .btn-sale-plan{
+        @apply text-txt-placeholder bg-surface border border-surface-icon focus:text-primary focus:border-primary  hover:text-primary hover:border-primary py-2 px-3 rounded-lg
+    }
+    .plans-container{
+        @apply p-4 max-w-93 max-h-182 rounded-2xl
+    }
+    .plans-items-container{
+        @apply p-4 bg-surface-elevated flex flex-col rounded-xl gap-4 max-h-125
+    }
+    .plans-items{
+        @apply text-txt-caption text-sm font-medium hover:text-txt-muted whitespace-nowrap pt-2
+    }
+    .table{
+        @apply text-base font-medium lg:text-base lg:font-normal text-txt-caption border-b border-b-surface-icon py-4 min-w-67 w-full
+    }
+    .table-icons{
+        @apply text-base  py-1 font-medium lg:text-base lg:font-normal text-txt-caption border-b border-b-surface-icon min-w-31 md:min-w-67 w-full
+    }
+}
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
