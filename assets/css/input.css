@@ -15,6 +15,7 @@
     --color-surface:#121A2E;
     --color-surface-elevated:#18213A;
     --color-surface-icon:#242F4F;
+    --color-btn-secondary:#5E6A85;
 
 
 /* --- Text Hierarchy --- */
@@ -118,28 +119,40 @@
 }
 @layer components{
     .btn-signIn{
-        @apply flex justify-center items-center whitespace-nowrap bg-primary text-bg py-2 px-4 rounded-lg hover:bg-transparent hover:text-primary hover:border hover:border-primary
+        @apply flex justify-center items-center whitespace-nowrap bg-primary text-bg py-2 px-4 rounded-lg hover:bg-transparent hover:text-primary hover:border hover:border-primary cursor-pointer
     }
     .navbar-items{
-        @apply text-txt-muted text-[16px] font-medium hover:text-txt-cta
+        @apply text-txt-muted text-[16px] font-medium hover:text-txt-cta cursor-pointer
     }
     .btn-sale-plan{
-        @apply text-txt-placeholder bg-surface border border-surface-icon focus:text-primary focus:border-primary  hover:text-primary hover:border-primary py-2 px-3 rounded-lg
+        @apply text-txt-placeholder bg-surface border border-surface-icon focus:text-primary focus:border-primary  hover:text-primary hover:border-primary py-2 px-3 rounded-lg cursor-pointer
     }
     .plans-container{
-        @apply p-4 max-w-93 max-h-182 rounded-2xl
+        @apply p-4 max-w-93 max-h-182 rounded-2xl cursor-pointer
     }
     .plans-items-container{
         @apply p-4 bg-surface-elevated flex flex-col rounded-xl gap-4 max-h-125
     }
     .plans-items{
-        @apply text-txt-caption text-sm font-medium hover:text-txt-muted whitespace-nowrap pt-2
+        @apply text-txt-caption text-sm font-medium hover:text-txt-muted whitespace-nowrap pt-2 cursor-pointer
+    }
+    .plans-items-btn{
+        @apply  text-txt-caption text-sm font-normal hover:text-txt-muted lg:text-base cursor-pointer
     }
     .table{
-        @apply text-base font-medium lg:text-base lg:font-normal text-txt-caption border-b border-b-surface-icon py-4 min-w-67 w-full
+        @apply text-base font-medium lg:text-base lg:font-normal text-txt-caption border-b border-b-surface-icon py-4 min-w-67 w-full cursor-pointer
     }
     .table-icons{
         @apply text-base  py-1 font-medium lg:text-base lg:font-normal text-txt-caption border-b border-b-surface-icon min-w-31 md:min-w-67 w-full
+    }
+    .dynamic-btn{
+        @apply flex items-center justify-center p-1 bg-txt-cta/24 rounded-full w-9 h-9 lg:w-9.5 lg:h-9.5 cursor-pointer
+    }
+    .footer-items{
+        @apply flex flex-row-reverse justify-between text-txt-caption  hover:text-txt-cta text-sm font-normal cursor-pointer
+    }
+    .footer-items-end{
+        @apply flex flex-row justify-start items-center  text-txt-caption  hover:text-txt-cta text-sm font-normal cursor-pointer
     }
 }
 @utility scrollbar-hide {
