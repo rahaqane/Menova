@@ -1,30 +1,33 @@
-const dynamicBtns = document.querySelectorAll(".dynamic-btn");
+document.addEventListener("DOMContentLoaded", () => {
+  // FAQ accordion
+  document.querySelectorAll(".dynamic-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".change-bg");
+      const dynamicElements = card.querySelectorAll(".dynamic-p, .open-close-btn");
+      const closeBtnIcon = card.querySelector(".close-btn");
+      const openBtnIcon = card.querySelector(".open-btn");
+      const isClosed = dynamicElements[0].classList.contains("hidden");
 
-dynamicBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".change-bg");
-    const dynamicElements = card.querySelectorAll(".dynamic-p, .open-close-btn");
-    const closeBtnIcon = card.querySelector(".close-btn");
-    const openBtnIcon = card.querySelector(".open-btn");
+      dynamicElements.forEach((el) => el.classList.toggle("hidden"));
+      openBtnIcon?.classList.toggle("hidden");
+      closeBtnIcon?.classList.toggle("hidden");
 
-    // بررسی اینکه کارت الان بسته است یا باز
-    const isClosed = dynamicElements[0].classList.contains("hidden");
-
-    dynamicElements.forEach((el) => {
-      el.classList.toggle("hidden");
+      card.classList.toggle("bg-transparent", !isClosed);
+      card.classList.toggle("bg-surface", isClosed);
     });
+  });
 
-    openBtnIcon?.classList.toggle("hidden");
-    closeBtnIcon?.classList.toggle("hidden");
+  // Swiper home
+  const swiper = new Swiper(".mySwiper", { loop: true, grabCursor: true });
+  const nextBtn = document.querySelector(".custom-next");
+  nextBtn?.addEventListener("click", () => swiper.slideNext());
 
-    if (isClosed) {
-      // وقتی باز میشه
-      card.classList.remove("bg-transparent");
-      card.classList.add("bg-surface");
-    } else {
-      // وقتی بسته میشه
-      card.classList.remove("bg-surface");
-      card.classList.add("bg-transparent");
-    }
+  // Swiper comments
+  new Swiper(".commentsSwiper", {
+    slidesPerView: "auto",
+    loop: true,
+    grabCursor: true,
+    slidesPerView: "auto",
+    spaceBetween: 16,
   });
 });
