@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: "auto",
     loop: true,
     grabCursor: true,
-    slidesPerView: "auto",
     spaceBetween: 16,
+     centeredSlides: true,
   });
 });
