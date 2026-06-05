@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg">
     <div class="relative overflow-hidden">
       <div class="absolute inset-0 z-0 pointer-events-none">
         <img
-          src="./assets/images/bg1.svg"
+          src="./assets/images/homebg.svg"
           alt=""
           srcset=""
-          class="sm:hidden object-cover object-top"
+          class="hidden sm:flex object-cover object-top"
         />
-        <img
+        <!-- <img
           src="./assets/images/bg1.svg"
           alt=""
           srcset=""
           class="hidden sm:flex min-w-[402px] sm:w-full object-cover object-top"
-        />
+        /> -->
       </div>
       <header
         class="m-4 md:m-15 lg:mx-30 p-4 min-h flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px]"
@@ -53,541 +55,1022 @@
           />
         </div>
       </header>
-      <main class="m-4 md:m-15 lg:mx-30">
-        <div class="flex flex-col justify-center items-center gap-3 my-20">
-          <h1
-            class="text-txt-main text-3xl lg:text-5xl font-bold text-center leading-12 lg:leading-20 max-w-175"
-          >
-            پلنی که کسب‌وکار تو رو متحول می‌کنه انتخاب کن
-          </h1>
-          <p
-            class="text-txt-placeholder text-sm lg:text-[20px] font-normal text-center"
-          >
-            از میان ده‌ها قالب آماده انتخاب کنید و منوی دیجیتال کسب‌وکارتان را
-            در چند دقیقه بسازید
-          </p>
-        </div>
-        <section class="flex flex-col gap-4">
-          <div class="mt-20">
-            <h2 class="text-txt-main text-2xl font-bold text-center lg:hidden">
-              پلن مناسب کسب‌وکار خود را انتخاب کنید
-            </h2>
-          </div>
+      <main class="">
+        <section id="mobile-slider">
           <div
-            id="planTabs"
-            class="flex gap-3 mx-auto justify-center items-center w-full my-8 max-w-103.5"
+            class="flex flex-col sm:flex-row-reverse items-center justify-between gap-10 max-w[1200px]"
           >
-            <button class="btn-sale-plan w-full">ماهانه</button>
-            <div class="relative w-full">
-              <button class="btn-sale-plan w-full">شش ماهه</button>
-              <div class="absolute bottom-3 left-1/2 -translate-1/2">
-                <p
-                  class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap w-full"
-                >
-                  8 % تخفیف
-                </p>
-              </div>
-            </div>
-            <div class="relative w-full">
-              <button class="btn-sale-plan w-full">یک ساله</button>
-              <div class="absolute bottom-3 left-1/2 -translate-1/2">
-                <p
-                  class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap w-full"
-                >
-                  15 % تخفیف
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p
-              class="text-txt-cta text-center font-medium text-sm leading-8 mb-8"
-            >
-              در منوا می‌توانید پس از خرید هر پلن، امکانات و قالب‌های بیشتری را
-              به‌صورت ماژول جداگانه اضافه کنید
-            </p>
-          </div>
-          <div
-            class="flex flex-col lg:flex-row justify-center items-center w-full gap-8"
-          >
-            <div
-              class="plans-container bg-surface border-[1.5px] border-[#F75F003D] shadow-[inset_0_0_24px_0_#F75F003D]"
-            >
-              <div class="flex flex-col justify-center items-center">
-                <p class="text-txt-placeholder text-xs font-normal">پلن</p>
-                <p class="text-accent-orange font-semibold text-xl">برنزی</p>
-                <p class="text-txt-placeholder text-xs font-normal py-4">
-                  <span class="text-txt-muted font-bold text-2xl">270</span>
-                  هزار تومان ماهانه
-                </p>
-              </div>
-              <div class="plans-items-container">
-                <div
-                  class="flex justify-center items-center text-primary border border-primary py-2 px-3 rounded-lg"
-                >
-                  <p>مناسب کافه‌ رستوران‌های نو‌پا</p>
-                </div>
-                <p class="text-txt-placeholder text-xs font-normal">
-                  اگر تازه کافه یا رستوران خود را راه‌اندازی کرده‌اید و
-                  می‌خواهید با هزینه کمتر و بدون تعهد بلندمدت منوی دیجیتال داشته
-                  باشید، این پلن انتخاب مناسبی است
-                </p>
-                <div class="mx-4">
-                  <ul class="list-disc marker:text-primary marker:text-lg">
-                    <li class="plans-items">دسترسی به ۵ قالب دیجیتال پایه</li>
-                    <li class="plans-items">
-                      امکان انتخاب و فعال‌سازی ۲ قالب هم‌زمان
-                    </li>
-                    <li class="plans-items">
-                      دامنه اختصاصی QR منوا برای هر کسب‌وکار
-                    </li>
-                    <li class="plans-items">
-                      نمایش منو با تصویر، توضیح و قیمت محصولات
-                    </li>
-                    <li class="plans-items">
-                      پنل مدیریت ساده برای ویرایش سریع آیتم‌ها
-                    </li>
-                    <li class="plans-items">
-                      دریافت تا ۵۰۰ پیامک اطلاع‌رسانی در ماه
-                    </li>
-                    <li class="plans-items">بخش گزارش فروش پایه</li>
-                    <li class="plans-items">
-                      قابلیت درج لوگو و رنگ برند اختصاصی
-                    </li>
-                    <li class="plans-items">
-                      پشتیبانی آنلاین از طریق چت درون‌برنامه
-                    </li>
-                    <li class="plans-items">
-                      پیش‌نمایش رایگان ۷ روزه برای شروع
-                    </li>
-                  </ul>
+            <div class="slider-wrapper flex items-center gap-4">
+              <div class="swiper mySwiper swiper-custom">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/images/home-slider.svg"
+                      alt=""
+                      class="lg:hidden"
+                    />
+                    <img
+                      src="./assets/images/frame65.svg"
+                      alt=""
+                      class="hidden lg:flex"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/images/home-slider.svg"
+                      alt=""
+                      class="lg:hidden"
+                    />
+                    <img
+                      src="./assets/images/frame65.svg"
+                      alt=""
+                      class="hidden lg:flex"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/images/home-slider.svg"
+                      alt=""
+                      class="lg:hidden"
+                    />
+                    <img
+                      src="./assets/images/frame65.svg"
+                      alt=""
+                      class="hidden lg:flex"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="flex gap-5 pt-4">
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  خرید پلن برنزی
-                </button>
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  جزئیات بیشتر
-                </button>
-              </div>
+
+              <button
+                class="custom-next rounded-full bg-txt-cta/40 p-4 flex justify-center items-center shrink-0"
+              >
+                <img
+                  src="./assets/icons/next-slide.svg"
+                  alt=""
+                  class="w-4.25 h-3.5"
+                />
+              </button>
             </div>
             <div
-              class="plans-container relative bg-surface border-[1.5px] border-[#B1BAD280] shadow-[inset_0_0_24px_0_#756C7766]"
+              class="gap-4 flex flex-col justify-center lg:items-start lg:justify-start"
+            >
+              <h3 class="text-2xl font-semibold text-txt-cta">
+                قالب پاپ‌اِستریت
+              </h3>
+              <p class="text-sm font-bold hidden md:block text-txt-placeholder">
+                مناسب پیتزا فروشی‌ها، برگر شاپ‌ها و کافه-رستوران‌های مدرن.
+              </p>
+              <button class="btn-sale-plan w-full">مشاهده این قالب</button>
+            </div>
+            <div
+              class="flex flex-col relative z-10 justify-start items-start gap-7 max-w-139"
             >
               <img
-                src="./assets/icons/favorite.svg"
+                src="./assets/icons/easy.svg"
                 alt=""
-                srcset=""
-                class="absolute -top-8 -left-8 z-20 object-contain"
+                class="absolute left-0 -top-4 md:hidden"
               />
-              <div class="flex flex-col justify-center items-center">
-                <p class="text-txt-placeholder text-xs font-normal">پلن</p>
-                <p class="text-txt-muted font-semibold text-xl">نقره ای</p>
-                <p class="text-txt-placeholder text-xs font-normal py-4">
-                  <span class="text-txt-muted font-bold text-2xl">520</span>
-                  هزار تومان ماهانه
+              <img
+                src="./assets/icons/easy2.svg"
+                alt=""
+                class="hidden md:block absolute -left-20 -top-20"
+              />
+
+              <h1
+                class="text-txt-main text-4xl lg:text-7xl font-bold text-center leading-12 lg:leading-20 whitespace-nowrap"
+              >
+                منوی دیجیتال منوا
+              </h1>
+
+              <div
+                class="flex flex-col justify-center items-start gap-3 md:gap-6"
+              >
+                <p class="text-txt-caption text-sx font-normal lg:text-base">
+                  قالب‌های آماده منوی دیجیتال برای نمایش حرفه‌ای، به‌روزرسانی
+                  سریع و تجربه‌ای مدرن برای مشتریان شما. قابل استفاده بر روی
+                  <span class="text-txt-muted">اندروید</span> و
+                  <span class="text-txt-muted">کامپیوتر</span>
                 </p>
-              </div>
-              <div class="plans-items-container">
-                <div
-                  class="flex justify-center items-center text-primary border border-primary py-2 px-3 rounded-lg"
-                >
-                  <p>مناسب هتل‌ها و کافه‌های بزرگ</p>
+
+                <div class="flex gap-4 w-full max-w-[326px] lg:max-w-[370px]">
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    خرید اشتراک منوا
+                  </button>
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    مشاهده قالب‌ها
+                  </button>
                 </div>
-                <p class="text-txt-placeholder text-xs font-normal">
-                  اگر کسب‌وکار شما فعال و شناخته‌شده است و به یک راهکار پایدارتر
-                  برای مدیریت منوی دیجیتال نیاز دارید، این پلن تعادل مناسبی بین
-                  مدت و ارزش ایجاد می‌کند.
-                </p>
-                <div class="mx-3">
-                  <ul class="list-disc marker:text-primary marker:text-lg">
-                    <li class="plans-items">
-                      دسترسی به ۱۵ قالب استاندارد و لوکس‌تر
-                    </li>
-                    <li class="plans-items">
-                      فعال‌سازی هم‌زمان ۴ قالب قابل‌سوئیچ
-                    </li>
-                    <li class="plans-items">دارا بودن همه امکانات پلن برنزی</li>
-                    <li class="plans-items">
-                      سیستم رزرو آنلاین میزها با تایید خودکار
-                    </li>
-                    <li class="plans-items">پرداخت آنلاین از طریق درگاه امن</li>
-                    <li class="plans-items">
-                      ماژول ارسال اعلان (نوتیفیکیشن یا پیامک)
-                    </li>
-                    <li class="plans-items">تا ۲۰۰۰ پیامک ماهانه رایگان</li>
-                    <li class="plans-items">
-                      داشبورد آماری پیشرفته (گزارش سفارش، بازدید، فروش)
-                    </li>
-                    <li class="plans-items">
-                      قابلیت بارگذاری گالری تصویری و بنر تبلیغاتی اختصاصی
-                    </li>
-                    <li class="plans-items">
-                      مدیریت چندشعبه‌ای پایه (اضافه‌کردن تا ۲ محل فعالیت)
-                    </li>
-                    <li class="plans-items">
-                      پشتیبانی اولویت‌دار از طریق تیکت و چت اختصاصی
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="flex gap-5 pt-4">
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  خرید پلن برنزی
-                </button>
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  جزئیات بیشتر
-                </button>
-              </div>
-            </div>
-            <div
-              class="plans-container bg-surface border-[1.5px] border-[#746735] shadow-[inset_0_0_24px_0_#E5CE393D]"
-            >
-              <div class="flex flex-col justify-center items-center">
-                <p class="text-txt-placeholder text-xs font-normal">پلن</p>
-                <p class="text-accent-gold font-semibold text-xl">طلایی</p>
-                <p class="text-txt-placeholder text-xs font-normal py-4">
-                  <span class="text-txt-muted font-bold text-2xl">1100</span>
-                  هزار تومان ماهانه
-                </p>
-              </div>
-              <div class="plans-items-container">
-                <div
-                  class="flex justify-center items-center border-primary text-primary border py-2 px-3 rounded-lg"
-                >
-                  <p>مناسب هتل‌های بزرگ</p>
-                </div>
-                <p class="text-txt-placeholder text-xs font-normal">
-                  اگر منوی دیجیتال بخشی از ساختار ثابت خدمات شماست و به ثبات و
-                  پشتیبانی بلندمدت نیاز دارید، این پلن برای مدیریت بدون وقفه در
-                  طول سال طراحی شده است.
-                </p>
-                <div class="mx-4">
-                  <ul class="list-disc marker:text-primary marker:text-lg">
-                    <li class="plans-items">
-                      دسترسی کامل به تمام ۳۰+ قالب منوا
-                    </li>
-                    <li class="plans-items">
-                      فعال‌سازی هم‌زمان 8 قالب قابل‌سوئیچ
-                    </li>
-                    <li class="plans-items">
-                      ایجاد نامحدود دسته بندی آیتم غذاها
-                    </li>
-                    <li class="plans-items">
-                      پرداخت و سفارش آنلاین یکپارچه با مدیریت سفارش
-                    </li>
-                    <li class="plans-items">
-                      سیستم رزرو پیشرفته با انتخاب زمان، صندلی و ...
-                    </li>
-                    <li class="plans-items">
-                      داشبورد مدیریتی حرفه‌ای با آنالیتیکس و گزارش‌
-                    </li>
-                    <li class="plans-items">
-                      ارسال ۵۰۰۰ پیامک یا نوتیفیکیشن ماهانه رایگان
-                    </li>
-                    <li class="plans-items">
-                      مدیریت کامل چندشعبه‌ای و تیمی با نقش‌ کاربران
-                    </li>
-                    <li class="plans-items">
-                      دسترسی به ماژول نظرسنجی مشتری و امتیازدهی
-                    </li>
-                    <li class="plans-items">پشتیبانی VIP (تلفنی و واتساپ)</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="flex gap-5 pt-4">
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  خرید پلن برنزی
-                </button>
-                <button class="btn-signIn text-sm font-semibold w-full">
-                  جزئیات بیشتر
-                </button>
               </div>
             </div>
           </div>
         </section>
         <section>
-          <div class="flex justify-center mt-20 mb-4 md:mb-10">
-            <p class="text-2xl font-bold text-txt-main lg:text-4xl">
-              مقایسه امکانات پلن‌های منوا
-            </p>
-          </div>
-          <div class="flex flex-row justify-center gap-5 lg:gap-20">
-            <div>
-              <div class="h-[60px]"></div>
-              <p class="table">دسترسی به داشبورد مدیریتی</p>
-              <p class="table">گزارش‌گیری و آمار فروش</p>
-              <p class="table">مدیریت منو و قیمت‌ها</p>
-              <p class="table">ثبت و پیگیری سفارش‌ها</p>
-              <p class="table">ابزار دریافت بازخورد مشتریان</p>
-              <p class="table">مدیریت چند شعبه</p>
-              <p class="table">مدیریت پرسنل و سطح دسترسی</p>
-              <p class="table">ابزارهای بازاریابی و وفادارسازی</p>
-              <p class="table">گزارش‌های تحلیلی پیشرفته</p>
-              <p class="table">پشتیبانی اولویت‌دار</p>
-              <p class="table">پیشنهادهای هوشمند (AI)</p>
-
-              <p class="table whitespace-nowrap">
-                شخصی‌سازی کامل برند (White‑Label)
-              </p>
-              <p class="table">مدیر حساب اختصاصی</p>
-              <p class="table">بروزرسانی و نگهداری رایگان</p>
-              <p
-                class="text-base font-medium lg:text-base lg:font-normal text-txt-caption py-4 max-w-67 w-full"
-              >
-                آموزش و راه‌اندازی اولیه
-              </p>
-            </div>
-            <div class="flex flex-row overflow-x-auto scrollbar-hide">
-              <div class="flex flex-col px-2">
-                <p
-                  class="text-txt-placeholder pt-2 text-center mb-4 text-sm font-normal lg:text-xl lg:font-base"
-                >
-                  پلن
-                  <span
-                    class="text-accent-orange text-xl font-semibold lg:font-semibold lg:text-3xl"
-                    >برنزی</span
+          <div
+            class="flex flex-col items-center justify-center gap-7 lg:gap-14 mt-20"
+          >
+            <h2
+              class="text-txt-main text-2xl font-bold text-center lg:text-4xl"
+            >
+              چرا منوی دیجیتال؟
+            </h2>
+            <div
+              class="flex flex-col justify-center items-center gap-7 md:flex-row min-w-93 max-w-249"
+            >
+              <div class="relative h-66.5 lg:h-72.75 w-full rounded-2xl">
+                <div class="absolute z-10 -translate-1/2 left-1/2">
+                  <svg
+                    class="w-12 h-12 lg:w-10 lg:h-10"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                </p>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
+                    <path
+                      d="M24 44C35 44 44 35 44 24C44 13 35 4 24 4C13 4 4 13 4 24C4 35 13 44 24 44Z"
+                      fill="#954f53"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.3401 29.66L29.6601 18.34"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M29.6601 29.66L18.3401 18.34"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
+                <div class="h-full w-full rounded-2xl overflow-hidden">
                   <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
+                    src="./assets/images/pic3.png"
+                    alt=""
+                    class="w-full h-full object-cover object-[50%_20%]"
                   />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
                 </div>
                 <div
-                  class="text-base font-medium lg:text-base lg:font-normal text-txt-caption py-1 max-w-67 w-full"
-                >
+                  class="absolute inset-0 bg-linear-to-t from-surface/80 to-transparent rounded-2xl pointer-events-none border-2 border-border-error"
+                ></div>
+              </div>
+
+              <div class="rounded-2xl relative h-79 w-full min-w-93">
+                <div class="absolute z-10 -translate-1/2 left-1/2">
+                  <svg
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.0001 51.3333C40.8334 51.3333 51.3334 40.8333 51.3334 28C51.3334 15.1666 40.8334 4.66663 28.0001 4.66663C15.1667 4.66663 4.66675 15.1666 4.66675 28C4.66675 40.8333 15.1667 51.3333 28.0001 51.3333Z"
+                      fill="#3A8170"
+                      stroke="#91CFBC"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.0833 28.0001L24.6866 34.6034L37.9166 21.3967"
+                      stroke="#91CFBC"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="h-full w-full rounded-2xl overflow-hidden">
                   <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
+                    src="./assets/images/pic2.png"
+                    alt=""
+                    class="w-full h-full object-cover object-center"
                   />
+                </div>
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-surface/80 to-transparent rounded-2xl pointer-events-none border-2 border-border-success"
+                ></div>
+              </div>
+
+              <div class="relative h-66.5 lg:h-72.75 w-full rounded-2xl">
+                <div class="absolute z-10 -translate-1/2 left-1/2">
+                  <svg
+                    class="w-12 h-12 lg:w-10 lg:h-10"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 44C35 44 44 35 44 24C44 13 35 4 24 4C13 4 4 13 4 24C4 35 13 44 24 44Z"
+                      fill="#954f53"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.3401 29.66L29.6601 18.34"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M29.6601 29.66L18.3401 18.34"
+                      stroke="#DD8383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div class="h-full w-full rounded-2xl overflow-hidden">
+                  <img
+                    src="./assets/images/pic1.png"
+                    alt=""
+                    class="w-full h-full object-cover object-[50%_20%]"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-surface/80 to-transparent rounded-2xl pointer-events-none border-2 border-border-error"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="options">
+          <div class="flex flex-col justify-between items-center mt-20 w-full">
+            <p
+              class="lg:text-4xl text-2xl font-bold text-txt-main whitespace-nowrap"
+            >
+              امکانات منو دیجیتال منوا
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 w-full">
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md:order-1 order-3 pt-10"
+              >
+                <img
+                  src="./assets/icons/circle3.svg"
+                  alt=""
+                  class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
+                />
+                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                  منوی دیجیتال اختصاصی
+                </h3>
+                <p
+                  class="text-xs font-medium lg:text-sm lg:font-normal text-txt-placeholder text-center"
+                >
+                  هماهنگ با رنگ و هویت بصری برند شما، برای یک تجربه حرفه‌ای و
+                  یکپارچه.
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md:order-2 order-4 pt-10"
+              >
+                <img
+                  src="./assets/icons/circle1.svg"
+                  alt=""
+                  class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
+                />
+                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                  منوی دیجیتال چندزبانه
+                </h3>
+                <p
+                  class="text-xs font-medium lg:text-sm lg:font-normal text-txt-placeholder text-center"
+                >
+                  نمایش منو به چند زبان برای دسترسی راحت‌تر و تجربه بهتر
+                  کاربران.
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md::order-3 order-2 pt-10"
+              >
+                <img
+                  src="./assets/icons/circle2.svg"
+                  alt=""
+                  class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
+                />
+                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                  پرداخت آنلاین سفارشات
+                </h3>
+                <p
+                  class="text-xs font-medium lg:text-sm lg:font-normal text-txt-placeholder text-center"
+                >
+                  امکان پرداخت آنلاین با درگاه‌های ریالی برای ثبت سفارش سریع و
+                  آسان.
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md:order-4 order-1 pt-10"
+              >
+                <img
+                  src="./assets/icons/circle4.svg"
+                  alt=""
+                  class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
+                />
+                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                  مدیریت ارسال بیرون‌بر
+                </h3>
+                <p
+                  class="text-xs font-medium lg:font-normal lg:text-sm text-txt-placeholder text-center"
+                >
+                  مدیریت و ارسال سفارشات بیرون‌بر به‌صورت ساده و منظم.
+                </p>
+              </div>
+            </div>
+            <a href="#" class="text-txt-cta font-semibold text-[16px] pt-10"
+              >مشاهده همه امکانات</a
+            >
+          </div>
+        </section>
+        <section>
+          <div class="relative flex flex-col items-start gap-8 lg:gap-12">
+            <h3 class="text-white text-2xl font-bold text-center lg:text-4xl">
+              منوا چگونه کار می‌کند ؟
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-8">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    ثبت‌نام و ساخت منو
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    در کمتر از چند دقیقه منوی دیجیتال خود را ایجاد کنید و
+                    آیتم‌ها را اضافه کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    شخصی‌سازی ظاهر
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    رنگ‌ها، دسته‌بندی‌ها و تصاویر را مطابق برند خود تنظیم کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    3
+                  </div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    اشتراک‌گذاری با مشتری
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    لینک یا QR منوی خود را به‌راحتی در اختیار مشتریان قرار دهید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    4
+                  </div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    ثبت سفارش و مدیریت
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    سفارش‌ها را دریافت کنید، پرداخت‌ها را مدیریت و همه‌چیز را
+                    آنلاین کنترل کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    5
+                  </div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    همراهی و پشتیبانی در تمام مسیر
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    از راه‌اندازی اولیه تا مدیریت روزانه منو، تیم پشتیبانی منوا
+                    در کنار شماست
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="absolute inset-0 z-0 pointer-events-none">
+              <img
+                src="./assets/images/bg2.svg"
+                alt=""
+                srcset=""
+                class="hidden sm:flex object-cover object-top"
+              />
+            </div>
+            <div class="sm:hidden w-full pointer-events-none">
+              <img
+                src="./assets/images/bg2-mobile.svg"
+                alt=""
+                srcset=""
+                class=" w-full"
+              />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="flex flex-col gap-4">
+            <div class="mt-40">
+              <h2
+                class="text-txt-main text-2xl font-bold text-center lg:text-4xl"
+              >
+                پلن مناسب کسب‌وکار خود را انتخاب کنید
+              </h2>
+            </div>
+            <div
+              id="planTabs"
+              class="flex gap-3 mx-auto justify-center items-center w-full my-8 max-w-103.5"
+            >
+              <button class="btn-sale-plan w-full">ماهانه</button>
+              <div class="relative w-full">
+                <button class="btn-sale-plan w-full">شش ماهه</button>
+                <div class="absolute bottom-3 left-1/2 -translate-1/2">
+                  <p
+                    class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap w-full"
+                  >
+                    8 % تخفیف
+                  </p>
+                </div>
+              </div>
+              <div class="relative w-full">
+                <button class="btn-sale-plan w-full">یک ساله</button>
+                <div class="absolute bottom-3 left-1/2 -translate-1/2">
+                  <p
+                    class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap w-full"
+                  >
+                    15 % تخفیف
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p
+                class="text-txt-cta text-center font-medium text-sm leading-8 mb-8"
+              >
+                در منوا می‌توانید پس از خرید هر پلن، امکانات و قالب‌های بیشتری
+                را به‌صورت ماژول جداگانه اضافه کنید
+              </p>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row justify-center items-center w-full gap-4"
+            >
+              <div
+                class="plans-container bg-surface border-[1.5px] border-[#F75F003D] shadow-[inset_0_0_24px_0_#F75F003D]"
+              >
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-txt-placeholder text-xs font-normal">پلن</p>
+                  <p class="text-accent-orange font-semibold text-xl">برنزی</p>
+                  <p class="text-txt-placeholder text-xs font-normal py-4">
+                    <span class="text-txt-muted font-bold text-2xl">270</span>
+                    هزار تومان ماهانه
+                  </p>
+                </div>
+                <div class="plans-items-container">
+                  <div
+                    class="flex justify-center items-center text-primary border border-primary py-2 px-3 rounded-lg"
+                  >
+                    <p>مناسب کافه‌ رستوران‌های نو‌پا</p>
+                  </div>
+                  <p class="text-txt-placeholder text-xs font-normal">
+                    اگر تازه کافه یا رستوران خود را راه‌اندازی کرده‌اید و
+                    می‌خواهید با هزینه کمتر و بدون تعهد بلندمدت منوی دیجیتال
+                    داشته باشید، این پلن انتخاب مناسبی است
+                  </p>
+                  <div class="mx-4">
+                    <ul class="list-disc marker:text-primary marker:text-lg">
+                      <li class="plans-items">دسترسی به ۵ قالب دیجیتال پایه</li>
+                      <li class="plans-items">
+                        امکان انتخاب و فعال‌سازی ۲ قالب هم‌زمان
+                      </li>
+                      <li class="plans-items">
+                        دامنه اختصاصی QR منوا برای هر کسب‌وکار
+                      </li>
+                      <li class="plans-items">
+                        نمایش منو با تصویر، توضیح و قیمت محصولات
+                      </li>
+                      <li class="plans-items">
+                        پنل مدیریت ساده برای ویرایش سریع آیتم‌ها
+                      </li>
+                      <li class="plans-items">
+                        دریافت تا ۵۰۰ پیامک اطلاع‌رسانی در ماه
+                      </li>
+                      <li class="plans-items">بخش گزارش فروش پایه</li>
+                      <li class="plans-items">
+                        قابلیت درج لوگو و رنگ برند اختصاصی
+                      </li>
+                      <li class="plans-items">
+                        پشتیبانی آنلاین از طریق چت درون‌برنامه
+                      </li>
+                      <li class="plans-items">
+                        پیش‌نمایش رایگان ۷ روزه برای شروع
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex gap-5 pt-4">
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    خرید پلن برنزی
+                  </button>
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    جزئیات بیشتر
+                  </button>
                 </div>
               </div>
               <div
-                class="flex flex-col px-2 border-[1.5px] bg-surface border-[#49526BB2] shadow-[0_0_20px_0_#FDFDFD14] rounded-2xl"
+                class="plans-container relative bg-surface border-[1.5px] border-[#B1BAD280] shadow-[inset_0_0_24px_0_#756C7766]"
               >
-                <p
-                  class="text-txt-placeholder pt-2 text-center mb-4 text-sm font-normal lg:text-xl lg:font-base"
-                >
-                  پلن
-                  <span
-                    class="text-txt-muted text-xl font-semibold lg:font-semibold lg:text-3xl"
-                    >نقره ای</span
+                <img
+                  src="./assets/icons/favorite.svg"
+                  alt=""
+                  srcset=""
+                  class="absolute -top-8 -left-8 z-20 object-contain"
+                />
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-txt-placeholder text-xs font-normal">پلن</p>
+                  <p class="text-txt-muted font-semibold text-xl">نقره ای</p>
+                  <p class="text-txt-placeholder text-xs font-normal py-4">
+                    <span class="text-txt-muted font-bold text-2xl">520</span>
+                    هزار تومان ماهانه
+                  </p>
+                </div>
+                <div class="plans-items-container">
+                  <div
+                    class="flex justify-center items-center text-primary border border-primary py-2 px-3 rounded-lg"
                   >
-                </p>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
+                    <p>مناسب هتل‌ها و کافه‌های بزرگ</p>
+                  </div>
+                  <p class="text-txt-placeholder text-xs font-normal">
+                    اگر کسب‌وکار شما فعال و شناخته‌شده است و به یک راهکار
+                    پایدارتر برای مدیریت منوی دیجیتال نیاز دارید، این پلن تعادل
+                    مناسبی بین مدت و ارزش ایجاد می‌کند.
+                  </p>
+                  <div class="mx-3">
+                    <ul class="list-disc marker:text-primary marker:text-lg">
+                      <li class="plans-items">
+                        دسترسی به ۱۵ قالب استاندارد و لوکس‌تر
+                      </li>
+                      <li class="plans-items">
+                        فعال‌سازی هم‌زمان ۴ قالب قابل‌سوئیچ
+                      </li>
+                      <li class="plans-items">
+                        دارا بودن همه امکانات پلن برنزی
+                      </li>
+                      <li class="plans-items">
+                        سیستم رزرو آنلاین میزها با تایید خودکار
+                      </li>
+                      <li class="plans-items">
+                        پرداخت آنلاین از طریق درگاه امن
+                      </li>
+                      <li class="plans-items">
+                        ماژول ارسال اعلان (نوتیفیکیشن یا پیامک)
+                      </li>
+                      <li class="plans-items">تا ۲۰۰۰ پیامک ماهانه رایگان</li>
+                      <li class="plans-items">
+                        داشبورد آماری پیشرفته (گزارش سفارش، بازدید، فروش)
+                      </li>
+                      <li class="plans-items">
+                        قابلیت بارگذاری گالری تصویری و بنر تبلیغاتی اختصاصی
+                      </li>
+                      <li class="plans-items">
+                        مدیریت چندشعبه‌ای پایه (اضافه‌کردن تا ۲ محل فعالیت)
+                      </li>
+                      <li class="plans-items">
+                        پشتیبانی اولویت‌دار از طریق تیکت و چت اختصاصی
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img
-                    src="assets/icons/close.svg"
-                    alt="close"
-                    class="mx-auto"
-                  />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div
-                  class="text-base font-medium lg:text-base lg:font-normal text-txt-caption py-1 max-w-67 w-full"
-                >
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
+                <div class="flex gap-5 pt-4">
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    خرید پلن برنزی
+                  </button>
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    جزئیات بیشتر
+                  </button>
                 </div>
               </div>
-              <div class="flex flex-col px-2">
-                <p
-                  class="text-txt-placeholder pt-2 text-center mb-4 text-sm font-normal lg:text-xl lg:font-base"
-                >
-                  پلن
-                  <span
-                    class="text-accent-gold text-xl font-semibold lg:font-semibold lg:text-3xl"
-                    >طلایی</span
+              <div
+                class="plans-container bg-surface border-[1.5px] border-[#746735] shadow-[inset_0_0_24px_0_#E5CE393D]"
+              >
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-txt-placeholder text-xs font-normal">پلن</p>
+                  <p class="text-accent-gold font-semibold text-xl">طلایی</p>
+                  <p class="text-txt-placeholder text-xs font-normal py-4">
+                    <span class="text-txt-muted font-bold text-2xl">1100</span>
+                    هزار تومان ماهانه
+                  </p>
+                </div>
+                <div class="plans-items-container">
+                  <div
+                    class="flex justify-center items-center border-primary text-primary border py-2 px-3 rounded-lg"
                   >
-                </p>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
+                    <p>مناسب هتل‌های بزرگ</p>
+                  </div>
+                  <p class="text-txt-placeholder text-xs font-normal">
+                    اگر منوی دیجیتال بخشی از ساختار ثابت خدمات شماست و به ثبات و
+                    پشتیبانی بلندمدت نیاز دارید، این پلن برای مدیریت بدون وقفه
+                    در طول سال طراحی شده است.
+                  </p>
+                  <div class="mx-4">
+                    <ul class="list-disc marker:text-primary marker:text-lg">
+                      <li class="plans-items">
+                        دسترسی کامل به تمام ۳۰+ قالب منوا
+                      </li>
+                      <li class="plans-items">
+                        فعال‌سازی هم‌زمان 8 قالب قابل‌سوئیچ
+                      </li>
+                      <li class="plans-items">
+                        ایجاد نامحدود دسته بندی آیتم غذاها
+                      </li>
+                      <li class="plans-items">
+                        پرداخت و سفارش آنلاین یکپارچه با مدیریت سفارش
+                      </li>
+                      <li class="plans-items">
+                        سیستم رزرو پیشرفته با انتخاب زمان، صندلی و ...
+                      </li>
+                      <li class="plans-items">
+                        داشبورد مدیریتی حرفه‌ای با آنالیتیکس و گزارش‌
+                      </li>
+                      <li class="plans-items">
+                        ارسال ۵۰۰۰ پیامک یا نوتیفیکیشن ماهانه رایگان
+                      </li>
+                      <li class="plans-items">
+                        مدیریت کامل چندشعبه‌ای و تیمی با نقش‌ کاربران
+                      </li>
+                      <li class="plans-items">
+                        دسترسی به ماژول نظرسنجی مشتری و امتیازدهی
+                      </li>
+                      <li class="plans-items">پشتیبانی VIP (تلفنی و واتساپ)</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div class="table-icons">
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
-                </div>
-                <div
-                  class="text-base font-medium lg:text-base lg:font-normal text-txt-caption py-1 max-w-67 w-full"
-                >
-                  <img src="assets/icons/tick.svg" alt="tick" class="mx-auto" />
+                <div class="flex gap-5 pt-4">
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    خرید پلن برنزی
+                  </button>
+                  <button class="btn-signIn text-sm font-semibold w-full">
+                    جزئیات بیشتر
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="plans-details">
+        <section id="in-number">
+          <div class="flex flex-col justify-between items-center gap-8 mt-20">
+            <p class="lg:text-4xl text-2xl font-bold text-txt-main">
+              منوا در اعداد
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4">
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6"
+              >
+                <p
+                  class="text-3xl font-bold text-txt-caption lg:text-6xl px-20"
+                >
+                  +۲۵۰
+                </p>
+                <p
+                  class="text-xs font-medium lg:font-normal text-txt-placeholder"
+                >
+                  شهر مختلف
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6"
+              >
+                <p class="text-3xl font-bold text-txt-caption lg:text-6xl">
+                  +۱۸
+                </p>
+                <p
+                  class="text-xs font-medium lg:font-normal text-txt-placeholder"
+                >
+                  بازدید منو در ماه
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6"
+              >
+                <p class="text-3xl font-bold text-txt-caption lg:text-6xl">
+                  +۱۲٬۰۰۰
+                </p>
+                <p
+                  class="text-xs font-medium lg:font-normal text-txt-placeholder"
+                >
+                  بازدید منو در ماه
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6"
+              >
+                <p class="text-3xl font-bold text-txt-caption lg:text-6xl">
+                  ۹۸٪
+                </p>
+                <p
+                  class="text-xs font-medium lg:font-normal text-txt-placeholder"
+                >
+                  رضایت کاربران
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="comments">
+          <!-- client comment -->
+          <div
+            class="flex flex-col md:flex-row justify-center items-center mt-20"
+          >
+            <div
+              class="flex flex-col justify-center items-center min-w-92 max-w-131 gap-3 md:gap-6"
+            >
+              <div class="flex flex-col w-full gap-3 md:gap-6">
+                <p class="text-txt-main font-bold text-2xl md:text-4xl">
+                  تجربه واقعی کاربران از استفاده منوا
+                </p>
+                <p
+                  class="text-txt-caption text-sm font-normal md:text-base text-justify"
+                >
+                  منوا به کسب‌وکارها کمک می‌کند منوی دیجیتال خود را سریع
+                  راه‌اندازی کنند، همیشه به‌روز نگه دارند و تجربه بهتری برای
+                  مشتریانشان بسازند.
+                </p>
+              </div>
+              <div class="flex gap-4 w-full">
+                <button class="btn-signIn text-sm font-semibold w-full">
+                  خرید پلن برنزی
+                </button>
+                <button class="btn-signIn text-sm font-semibold w-full">
+                  جزئیات بیشتر
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 max-w-145">
+              <div class="client-cm">
+                <div class="flex flex-row justify-between items-center">
+                  <p class="text-lg lg:text-xl font-semibold text-txt-muted">
+                    علی رضایی
+                  </p>
+                  <p
+                    class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap"
+                  >
+                    مدیر کافی شاپ
+                  </p>
+                </div>
+                <p class="text-sm font-normal text-txt-caption">
+                  منوا باعث شد منوی ما همیشه به‌روز باشه و دیگه نیازی به چاپ
+                  مجدد نداشته باشیم. راه‌اندازیش هم خیلی سریع بود.
+                </p>
+              </div>
+              <div class="client-cm">
+                <div class="flex flex-row justify-between items-center">
+                  <p class="text-lg lg:text-xl font-semibold text-txt-muted">
+                    علی رضایی
+                  </p>
+                  <p
+                    class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap"
+                  >
+                    مدیر کافی شاپ
+                  </p>
+                </div>
+                <p class="text-sm font-normal text-txt-caption">
+                  منوا باعث شد منوی ما همیشه به‌روز باشه و دیگه نیازی به چاپ
+                  مجدد نداشته باشیم. راه‌اندازیش هم خیلی سریع بود.
+                </p>
+              </div>
+              <div class="client-cm">
+                <div class="flex flex-row justify-between items-center">
+                  <p class="text-lg lg:text-xl font-semibold text-txt-muted">
+                    علی رضایی
+                  </p>
+                  <p
+                    class="bg-off rounded-lg p-2 font-semibold text-xs text-primary-dark whitespace-nowrap"
+                  >
+                    مدیر کافی شاپ
+                  </p>
+                </div>
+                <p class="text-sm font-normal text-txt-caption">
+                  منوا باعث شد منوی ما همیشه به‌روز باشه و دیگه نیازی به چاپ
+                  مجدد نداشته باشیم. راه‌اندازیش هم خیلی سریع بود.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="customers">
+          <div
+            class="flex flex-col justify-center items-center gap-8 mt-20 m-4 md:m-15 lg:mx-30"
+          >
+            <p class="text-xl font-semibold text-txt-main whitespace-nowrap">
+              برخی از مشتریانی که به ما اعتماد کرده‌اند
+            </p>
+
+            <div class="swiper commentsSwiper w-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-auto!">
+                  <div
+                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment min-w-61 max-w-68">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto!">
+                  <div
+                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment min-w-61 max-w-68">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto!">
+                  <div
+                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment min-w-61 max-w-68">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto!">
+                  <div
+                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment min-w-61 max-w-68">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="questions">
           <div class="flex justify-center mt-20 mb-4 md:mb-10">
             <p class="text-2xl font-bold text-txt-main lg:text-4xl">
-              جزئیات تخصصی پلن‌ها
+              سوالات متداول
             </p>
           </div>
           <div
-            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 gap-4"
+            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 max-w-3xl mx-auto gap-4"
           >
             <div
-              class="flex justify-between py-2 lg:p-4 border-b border-b-surface-icon"
+              class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
             >
-              <h2
-                class="focus:text-txt-muted text-txt-main text-xl font-bold lg:text-4xl lg:font-semibold"
-              >
-                پلن برنزی
-              </h2>
+              <p class="text-txt-muted text-base font-semibold lg:text-lg">
+                پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+              </p>
 
               <button class="dynamic-btn">
                 <img
@@ -604,220 +1087,23 @@
                 />
               </button>
             </div>
-            <p
-              class="open-close-btn hidden text-txt-caption text-sm lg:text-base font-normal text-justify"
-            >
-              پلن برنزی برای کسب‌وکارهای تازه‌تأسیس، کافه‌های محلی و
-              اغذیه‌فروشی‌هایی طراحی شده که می‌خواهند اولین منوی دیجیتال حرفه‌ای
-              خود را با کمترین هزینه راه بیندازند. بدون نیاز به دانش فنی، در
-              کمتر از ۱۰ دقیقه منوی خود را آنلاین کن
-            </p>
-            <div class="dynamic-p hidden flex justify-between pt-8">
-              <h3
-                class="text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted"
-              >
-                قالب‌های قابل دسترس
-              </h3>
-              <p
-                class="text-xs lg:text-sm font-normal p-2 rounded-lg bg-txt-cta/12 text-txt-muted"
-              >
-                انتخاب <span class="text-txt-cta">1 قالب</span> از بین ۳ قالب
+
+            <div class="dynamic-p hidden mb-4 text-txt-caption">
+              <p class="text-sm md:text-base font-normal">
+                خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+                می‌توانند منو را در مرورگر مشاهده کنند.
               </p>
-            </div>
-            <div
-              class="dynamic-p hidden flex gap-4 overflow-x-auto scrollbar-hide"
-            >
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-            </div>
-            <p
-              class="dynamic-p hidden text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted mt-8"
-            >
-              امکانات ویژه و جزئیات فنی
-            </p>
-            <div
-              class="dynamic-p hidden flex flex-col sm:flex-row sm:justify-between"
-            >
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">تعداد پیامک ماهانه: ۱۰۰ پیامک </span
-                    >(هشدار رزرو، اطلاعیه تخفیف)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">رزرو آنلاین:</span>حداکثر
-                    <span class="font-bold">۱۰رزرو</span> همزمان (مناسب سالن
-                    کوچک)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <div
-                    class="plans-items-btn flex items-center whitespace-nowrap gap-1"
-                  >
-                    <span class="font-bold">پرداخت آنلاین:</span>
-                    <span>
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="18 18 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="block"
-                      >
-                        <path
-                          d="M18.34 29.6598L29.66 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                        <path
-                          d="M29.66 29.6598L18.34 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-[#D66A6A]">فعال نیست</span>(فعلاً درگاه
-                    غیرفعال)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">گزارش فروش:</span> گزارش پایه (تعداد
-                    بازدید منو، کلیک روی آیتم‌ها)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">پشتیبانی:</span> ایمیلی (پاسخگویی ۲۴
-                    ساعته، غیرحضوری)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">فضای ابری:</span> ۵۰۰ مگابایت برای
-                    آپلود تصاویر منو
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="dynamic-p hidden mt-8 flex flex-col sm:flex-row justify-between gap-2.5 rounded-2xl bg-txt-cta/12 p-4 items-center mb-4"
-            >
-              <div class="flex flex-col gap-2.5">
-                <h3
-                  class="text-lg lg:text-2xl font-bold text-txt-cta whitespace-nowrap"
-                >
-                  پلن برنزی انتخاب شماست ؟؟
-                </h3>
-                <p
-                  class="text-xs font-normal lg:text-base lg:font-medium text-txt-caption"
-                >
-                  با چند کلیک اشتراک برنزی را برای خودت فعال کن تا وارد دنیای
-                  شگفت انگیز منوا بشی
-                </p>
-              </div>
-              <button
-                class="btn-signIn text-sm font-semibold w-full max-h-12 max-w-80.5"
-              >
-                خرید پلن برنزی
-              </button>
             </div>
           </div>
           <div
-            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 gap-4"
+            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 gap-4 mx-auto max-w-3xl"
           >
             <div
-              class="flex justify-between py-2 lg:p-4 border-b border-b-surface-icon"
+              class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
             >
-              <h2
-                class="focus:text-txt-muted text-txt-main text-xl font-bold lg:text-4xl lg:font-semibold"
-              >
-                پلن نقره ای
-              </h2>
+              <p class="text-txt-muted text-base font-semibold lg:text-lg">
+                پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+              </p>
 
               <button class="dynamic-btn">
                 <img
@@ -834,220 +1120,23 @@
                 />
               </button>
             </div>
-            <p
-              class="open-close-btn hidden text-txt-caption text-sm lg:text-base font-normal text-justify"
-            >
-              پلن نقره ای برای کسب‌وکارهای تازه‌تأسیس، کافه‌های محلی و
-              اغذیه‌فروشی‌هایی طراحی شده که می‌خواهند اولین منوی دیجیتال حرفه‌ای
-              خود را با کمترین هزینه راه بیندازند. بدون نیاز به دانش فنی، در
-              کمتر از ۱۰ دقیقه منوی خود را آنلاین کن
-            </p>
-            <div class="dynamic-p hidden flex justify-between pt-8">
-              <h3
-                class="text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted"
-              >
-                قالب‌های قابل دسترس
-              </h3>
-              <p
-                class="text-xs lg:text-sm font-normal p-2 rounded-lg bg-txt-cta/12 text-txt-muted"
-              >
-                انتخاب <span class="text-txt-cta">1 قالب</span> از بین ۳ قالب
+
+            <div class="dynamic-p hidden mb-4 text-txt-caption">
+              <p class="text-sm md:text-base font-normal">
+                خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+                می‌توانند منو را در مرورگر مشاهده کنند.
               </p>
-            </div>
-            <div
-              class="dynamic-p hidden flex gap-4 overflow-x-auto scrollbar-hide"
-            >
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-            </div>
-            <p
-              class="dynamic-p hidden text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted mt-8"
-            >
-              امکانات ویژه و جزئیات فنی
-            </p>
-            <div
-              class="dynamic-p hidden flex flex-col sm:flex-row sm:justify-between"
-            >
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">تعداد پیامک ماهانه: ۱۰۰ پیامک </span
-                    >(هشدار رزرو، اطلاعیه تخفیف)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">رزرو آنلاین:</span>حداکثر
-                    <span class="font-bold">۱۰رزرو</span> همزمان (مناسب سالن
-                    کوچک)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <div
-                    class="plans-items-btn flex items-center whitespace-nowrap gap-1"
-                  >
-                    <span class="font-bold">پرداخت آنلاین:</span>
-                    <span>
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="18 18 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="block"
-                      >
-                        <path
-                          d="M18.34 29.6598L29.66 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                        <path
-                          d="M29.66 29.6598L18.34 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-[#D66A6A]">فعال نیست</span>(فعلاً درگاه
-                    غیرفعال)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">گزارش فروش:</span> گزارش پایه (تعداد
-                    بازدید منو، کلیک روی آیتم‌ها)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">پشتیبانی:</span> ایمیلی (پاسخگویی ۲۴
-                    ساعته، غیرحضوری)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">فضای ابری:</span> ۵۰۰ مگابایت برای
-                    آپلود تصاویر منو
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="dynamic-p hidden mt-8 flex flex-col sm:flex-row justify-between gap-2.5 rounded-2xl bg-txt-cta/12 p-4 items-center mb-4"
-            >
-              <div class="flex flex-col gap-2.5">
-                <h3
-                  class="text-lg lg:text-2xl font-bold text-txt-cta whitespace-nowrap"
-                >
-                  پلن نقره ای انتخاب شماست ؟؟
-                </h3>
-                <p
-                  class="text-xs font-normal lg:text-base lg:font-medium text-txt-caption"
-                >
-                  با چند کلیک اشتراک نقره ای را برای خودت فعال کن تا وارد دنیای
-                  شگفت انگیز منوا بشی
-                </p>
-              </div>
-              <button
-                class="btn-signIn text-sm font-semibold w-full max-h-12 max-w-80.5"
-              >
-                خرید پلن نقره ای
-              </button>
             </div>
           </div>
           <div
-            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 gap-4"
+            class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 mx-auto gap-4 max-w-3xl"
           >
             <div
-              class="flex justify-between py-2 lg:p-4 border-b border-b-surface-icon"
+              class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
             >
-              <h2
-                class="focus:text-txt-muted text-txt-main text-xl font-bold lg:text-4xl lg:font-semibold"
-              >
-                پلن طلایی
-              </h2>
+              <p class="text-txt-muted text-base font-semibold lg:text-lg">
+                پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+              </p>
 
               <button class="dynamic-btn">
                 <img
@@ -1064,207 +1153,12 @@
                 />
               </button>
             </div>
-            <p
-              class="open-close-btn hidden text-txt-caption text-sm lg:text-base font-normal text-justify"
-            >
-              پلن طلایی برای کسب‌وکارهای تازه‌تأسیس، کافه‌های محلی و
-              اغذیه‌فروشی‌هایی طراحی شده که می‌خواهند اولین منوی دیجیتال حرفه‌ای
-              خود را با کمترین هزینه راه بیندازند. بدون نیاز به دانش فنی، در
-              کمتر از ۱۰ دقیقه منوی خود را آنلاین کن
-            </p>
-            <div class="dynamic-p hidden flex justify-between pt-8">
-              <h3
-                class="text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted"
-              >
-                قالب‌های قابل دسترس
-              </h3>
-              <p
-                class="text-xs lg:text-sm font-normal p-2 rounded-lg bg-txt-cta/12 text-txt-muted"
-              >
-                انتخاب <span class="text-txt-cta">1 قالب</span> از بین ۳ قالب
+
+            <div class="dynamic-p hidden mb-4 text-txt-caption">
+              <p class="text-sm md:text-base font-normal">
+                خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+                می‌توانند منو را در مرورگر مشاهده کنند.
               </p>
-            </div>
-            <div
-              class="dynamic-p hidden flex gap-4 overflow-x-auto scrollbar-hide"
-            >
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-              <div
-                class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 min-w-70"
-              >
-                <img
-                  src="./assets/images/farme146.webp"
-                  alt=""
-                  srcset=""
-                  class="rounded-xl"
-                />
-                <h3 class="text-txt-main text-xl font-bold">قالب پاپ استریت</h3>
-                <p class="text-txt-caption text-sm font-normal">
-                  یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                </p>
-                <button
-                  class="bg-btn-secondary text-white font-semibold text-sm py-2 px-4 rounded-lg w-full"
-                >
-                  مشاهده دمو‌
-                </button>
-              </div>
-            </div>
-            <p
-              class="dynamic-p hidden text-lg font-bold lg:text-2xl lg:font-semibold text-txt-muted mt-8"
-            >
-              امکانات ویژه و جزئیات فنی
-            </p>
-            <div
-              class="dynamic-p hidden flex flex-col sm:flex-row sm:justify-between"
-            >
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">تعداد پیامک ماهانه: ۱۰۰ پیامک </span
-                    >(هشدار رزرو، اطلاعیه تخفیف)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">رزرو آنلاین:</span>حداکثر
-                    <span class="font-bold">۱۰رزرو</span> همزمان (مناسب سالن
-                    کوچک)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <div
-                    class="plans-items-btn flex items-center whitespace-nowrap gap-1"
-                  >
-                    <span class="font-bold">پرداخت آنلاین:</span>
-                    <span>
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="18 18 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="block"
-                      >
-                        <path
-                          d="M18.34 29.6598L29.66 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                        <path
-                          d="M29.66 29.6598L18.34 18.3398"
-                          stroke="#D66A6A"
-                          stroke-width="1.8"
-                          vector-effect="non-scaling-stroke"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-[#D66A6A]">فعال نیست</span>(فعلاً درگاه
-                    غیرفعال)
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="flex flex-col gap-4 w-full">
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-                  <p class="plans-items-btn">
-                    <span class="font-bold">گزارش فروش:</span> گزارش پایه (تعداد
-                    بازدید منو، کلیک روی آیتم‌ها)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">پشتیبانی:</span> ایمیلی (پاسخگویی ۲۴
-                    ساعته، غیرحضوری)
-                  </p>
-                </li>
-                <li class="flex gap-4 md:items-center">
-                  <span
-                    class="mt-2 h-2.5 w-2.5 rounded-full bg-txt-cta shrink-0"
-                  ></span>
-
-                  <p class="plans-items-btn">
-                    <span class="font-bold">فضای ابری:</span> ۵۰۰ مگابایت برای
-                    آپلود تصاویر منو
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="dynamic-p hidden mt-8 flex flex-col sm:flex-row justify-between gap-2.5 rounded-2xl bg-txt-cta/12 p-4 items-center mb-4"
-            >
-              <div class="flex flex-col gap-2.5">
-                <h3
-                  class="text-lg lg:text-2xl font-bold text-txt-cta whitespace-nowrap"
-                >
-                  پلن طلایی انتخاب شماست ؟؟
-                </h3>
-                <p
-                  class="text-xs font-normal lg:text-base lg:font-medium text-txt-caption"
-                >
-                  با چند کلیک اشتراک طلایی را برای خودت فعال کن تا وارد دنیای
-                  شگفت انگیز منوا بشی
-                </p>
-              </div>
-              <button
-                class="btn-signIn text-sm font-semibold w-full max-h-12 max-w-80.5"
-              >
-                خرید پلن طلایی
-              </button>
             </div>
           </div>
         </section>
@@ -1723,7 +1617,7 @@
               </li>
             </ul>
             <div
-              class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl p-4 gap-4"
+              class="change-bg flex flex-col border border-surface-icon bg-surface rounded-xl p-4 gap-4"
             >
               <p class="text-sm font-semibold text-txt-caption">آدرس :</p>
               <p class="text-xs font-normal text-txt-caption">
@@ -1735,7 +1629,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
