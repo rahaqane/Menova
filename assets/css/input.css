@@ -16,6 +16,7 @@
     --color-surface-elevated:#18213A;
     --color-surface-icon:#242F4F;
     --color-btn-secondary:#5E6A85;
+    --color-secondray:#4D576D;
 
 
 /* --- Text Hierarchy --- */
@@ -111,6 +112,8 @@
     --color-txt-caption:#B3BCD4;
     --color-off:#4C4741;
     --color-border-main:#9AA6C5;
+    --color-border-error:#D66A6A;
+    --color-border-success:#4CAF91;
 } 
 @layer base {
  body {
@@ -154,6 +157,37 @@
     .footer-items-end{
         @apply flex flex-row justify-start items-center  text-txt-caption  hover:text-txt-cta text-sm font-normal cursor-pointer
     }
+    .customers-comment{
+        @apply flex justify-between 
+    }
+    .customers-comment-container{
+        @apply flex flex-col bg-surface rounded-2xl justify-between items-center  p-3
+    }
+    .client-cm{
+        @apply flex flex-col max-w-138 p-4 rounded-xl border-2 border-surface-icon
+    }
+    /* swiper home */
+     .slider-wrapper {
+  width: 100%;
+  max-width: 700px;  /* یا هر اندازه‌ای که می‌خوای */
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.swiper-custom {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 }
 @utility scrollbar-hide {
   -ms-overflow-style: none;
