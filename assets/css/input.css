@@ -166,6 +166,29 @@
     .client-cm{
         @apply flex flex-col max-w-138 p-4 rounded-xl border-2 border-surface-icon
     }
+        .fillter{
+@apply bg-surface py-2 px-3 flex focus-within:border-primary rounded-lg border border-surface-icon text-txt-placeholder focus-within:text-primary  whitespace-nowrap
+    }
+    
+    .fillters-options{
+@apply bg-surface py-2 px-3 flex focus:border-primary rounded-lg border border-surface-icon text-txt-placeholder focus:text-primary  whitespace-nowrap w-full
+    }
+.select-btn{
+@apply bg-surface py-2 px-3 flex items-center gap-2 rounded-lg border border-surface-icon text-secondray focus-within:border-primary focus-within:text-primary  whitespace-nowrap w-full
+}
+.shop-fillter1{
+              @apply    flex justify-center items-center max-h-8 p-2 rounded-lg text-sm font-semibold border text-[#A15FF7] bg-[#A15FF714] border-[#A15FF7] whitespace-nowrap 
+
+}
+.shop-fillter2{
+              @apply    flex justify-center items-center max-h-8  p-2 rounded-lg text-sm font-semibold border text-[#4CAF91] bg-[#4CAF9114] border-[#4CAF91] whitespace-nowrap 
+
+}
+.shop-fillter3{
+              @apply    flex justify-center items-center max-h-8 p-2 rounded-lg text-sm font-semibold border text-[#A7661D] bg-[#A7661D14] border-[#A7661D] whitespace-nowrap 
+
+}
+
     /* swiper home */
      .slider-wrapper {
   width: 100%;
