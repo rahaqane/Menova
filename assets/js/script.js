@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   // FAQ accordion
   document.querySelectorAll(".dynamic-btn").forEach((btn) => {
@@ -17,6 +18,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // drop down 
+document.querySelectorAll(".dropdown").forEach((dropdown) => {
+  const toggle = dropdown.querySelector(".dropdown-toggle");
+  const menu = dropdown.querySelector(".dropdown-menu");
+  const arrow = dropdown.querySelector(".dropdown-arrow");
+  const items = dropdown.querySelectorAll(".dropdown-item");
+  const selectedText = dropdown.querySelector(".selected-text");
+
+  // باز و بسته شدن
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  // انتخاب گزینه
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      selectedText.textContent = item.textContent;
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    });
+  });
+});
+
+// بستن با کلیک بیرون
+document.addEventListener("click", (e) => {
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.querySelector(".dropdown-menu").classList.add("hidden");
+      dropdown.querySelector(".dropdown-arrow").classList.remove("rotate-180");
+    }
+  });
+});
+
   // Swiper home
   const swiper = new Swiper(".mySwiper", { loop: true, grabCursor: true });
   const nextBtn = document.querySelector(".custom-next");
@@ -31,3 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
      centeredSlides: true,
   });
 });
+
+// drop down
