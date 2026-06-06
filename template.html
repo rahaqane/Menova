@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template page</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-bg">
+    <header
+      class="m-4 md:m-15 lg:mx-30 p-4 min-h flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px]"
+    >
+      <div class="flex gap-10 items-center">
+        <img
+          src="./assets/icons/logo.svg"
+          alt="menoa logo"
+          class="md:max-h-10"
+        />
+        <ul class="hidden md:flex md:flex-row gap-10">
+          <li class="navbar-items">قالب‌ها</li>
+          <li class="navbar-items">پلن‌ها</li>
+          <li class="navbar-items">خدمات</li>
+          <li class="navbar-items">بلاگ</li>
+          <li class="navbar-items">ارتباط با ما</li>
+        </ul>
+      </div>
+      <div class="flex gap-4 items-center">
+        <button
+          type="button"
+          class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
+        >
+          ورود | ثبت نام
+        </button>
+        <img
+          src="./assets/icons/navbarIcon.svg"
+          alt="navBar"
+          class="w-10 h-10 md:hidden"
+        />
+      </div>
+    </header>
+    <main class="m-4 md:m-15 lg:mx-30">
+      <section>
+        <div class="flex flex-col justify-center items-center gap-3 my-20">
+          <h1 class="text-txt-main text-2xl lg:text-5xl font-bold text-center">
+            قالب‌های دیجیتال حرفه‌ای منوا
+          </h1>
+          <p
+            class="text-txt-placeholder text-sm lg:text-xl font-normal text-center"
+          >
+            از میان ده‌ها قالب آماده انتخاب کنید و منوی دیجیتال کسب‌وکارتان را
+            در چند دقیقه بسازید
+          </p>
+        </div>
+      </section>
+      <section id="images-bg">
+        <div class="flex flex-col">
+          <div class="-m-4 md:-m-15 lg:-mx-30 pointer-events-none">
+            <img
+              src="./assets/images/bg3-mobile.svg"
+              alt=""
+              srcset=""
+              class="sm:hidden w-full"
+            />
+            <img
+              src="./assets/images/bg3.svg"
+              alt=""
+              srcset=""
+              class="hidden sm:flex w-full"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-[#E6C89C14] rounded-xl p-2 lg:p-4 gap-4"
+          >
+            <p
+              class="text-sm font-normal lg:text-lg text-txt-caption text-center"
+            >
+              در هر پلن، مجموعه‌ای از قالب‌های منحصربه‌فرد به‌صورت پیش‌فرض در
+              دسترس شما قرار دارند که می‌توانید بر اساس نیاز خود، آن‌ها را
+              انتخاب و فعال کنید. با این حال، تمام قالب‌های موجود در Menoa، حتی
+              مواردی که در پلن اشتراک شما نیستند، قابل خرید تکی و استفاده هستند.
+            </p>
+            <p
+              class="text-txt-cta text-sm font-semibold lg:text-xl text-center"
+            >
+              هدف ما این است که شما بهترین و مناسب‌ترین قالب را برای برندتان
+              داشته باشید؛ چه از طریق اشتراک، چه با خرید ماژولار.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans-details">
+        <div class="flex flex-col justify-center items-center w-full">
+          <div
+            class="flex flex-col lg:flex-row w-full gap-4 lg:gap-10 mt-15 lg:mt-20 mb-8"
+          >
+            <div class="fillter gap-2 w-full group">
+              <svg
+                class="text-txt-placeholder group-focus:text-txt-cta"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 22L20 20"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <input
+                id="search-plans"
+                type="text"
+                placeholder="نام قالب را وارد کنید..."
+                class="bg-transparent outline-none focus:outline-surface-icon"
+              />
+            </div>
+            <button class="fillter sm:hidden w-full group">
+              <svg
+                class="text-txt-placeholder group-focus-within:text-txt-cta"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.5 22V15"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.5 5V2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.5 22V19"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.5 9V2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.5 7V13C9.5 14.1 9 15 7.5 15H5.5C4 15 3.5 14.1 3.5 13V7C3.5 5.9 4 5 5.5 5H7.5C9 5 9.5 5.9 9.5 7Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.5 11V17C20.5 18.1 20 19 18.5 19H16.5C15 19 14.5 18.1 14.5 17V11C14.5 9.9 15 9 16.5 9H18.5C20 9 20.5 9.9 20.5 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>فیلتر‌ها</span>
+            </button>
+            <div class="sm:flex gap-2 w-full hidden">
+              <button class="fillters-options">همه</button>
+              <button class="fillters-options">مناسب رستوران</button>
+              <button class="fillters-options">مناسب کافه</button>
+              <div class="h-12 border border-surface-icon"></div>
+              <div class="sm:flex gap-2 w-full hidden">
+                <div class="dropdown relative inline-block">
+                  <button
+                    type="button"
+                    class="dropdown-toggle fillter group flex items-center justify-between gap-4"
+                  >
+                    <div class="flex items-center gap-2">
+                      <svg
+                        class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.1499 16.5V18.6"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.1499 22H17.1499V21C17.1499 19.9 16.2499 19 15.1499 19H9.1499C8.0499 19 7.1499 19.9 7.1499 21V22V22Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M6.1499 22H18.1499"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 16C8.13 16 5 12.87 5 9V6C5 3.79 6.79 2 9 2H15C17.21 2 19 3.79 19 6V9C19 12.87 15.87 16 12 16Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M5.47004 11.65C4.72004 11.41 4.06004 10.97 3.54004 10.45C2.64004 9.44998 2.04004 8.24998 2.04004 6.84998C2.04004 5.44998 3.14004 4.34998 4.54004 4.34998H5.19004C4.99004 4.80998 4.89004 5.31998 4.89004 5.84998V8.84998C4.89004 9.84998 5.10004 10.79 5.47004 11.65Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.53 11.65C19.28 11.41 19.94 10.97 20.46 10.45C21.36 9.44998 21.96 8.24998 21.96 6.84998C21.96 5.44998 20.86 4.34998 19.46 4.34998H18.81C19.01 4.80998 19.11 5.31998 19.11 5.84998V8.84998C19.11 9.84998 18.9 10.79 18.53 11.65Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+
+                      <span class="selected-text whitespace-nowrap">
+                        همه پلن‌ها
+                      </span>
+                    </div>
+
+                    <svg
+                      class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
+                  >
+                    <div class="dropdown-item fillter cursor-pointer">
+                      پلن برنزی
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      پلن نقره ای
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      پلن طلایی
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dropdown relative inline-block">
+                  <button
+                    type="button"
+                    class="dropdown-toggle fillter group flex items-center justify-between gap-4"
+                  >
+                    <div class="flex items-center gap-2">
+                      <svg
+                        class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M3 7H21"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M6 12H18"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M10 17H14"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+
+                      <span class="selected-text whitespace-nowrap">
+                        مرتب سازی
+                      </span>
+                    </div>
+
+                    <svg
+                      class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
+                  >
+                    <div class="dropdown-item fillter cursor-pointer">
+                      مناسب رستوران
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      مناسب هتل
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      مناسب کافه
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8 justify-center"
+          >
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter1">مناسب رستوران</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#E5CE39"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#E5CE39"
+                      stroke="#E5CE39"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-accent-gold font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن طلایی
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal whitespace-nowrap"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter2">مناسب هتل</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#C3C3C3"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#C3C3C3"
+                      stroke="#C3C3C3"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-[#C3C3C3] font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن نقره ای
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal whitespace-nowrap"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter1">مناسب رستوران</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#E5CE39"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#E5CE39"
+                      stroke="#E5CE39"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-accent-gold font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن طلایی
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal whitespace-nowrap"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter2">مناسب هتل</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#C3C3C3"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#C3C3C3"
+                      stroke="#C3C3C3"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-[#C3C3C3] font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن نقره ای
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal whitespace-nowrap"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter3">مناسب کافه</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#F75F00"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#F75F00"
+                      stroke="#F75F00"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-accent-orange font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن برنزی
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
+            >
+              <img
+                src="./assets/images/farme146.webp"
+                alt=""
+                class="rounded-xl"
+              />
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-5">
+                  <h3 class="text-txt-main text-xl font-bold">
+                    قالب پاپ استریت
+                  </h3>
+                  <p
+                    class="text-txt-caption text-xs font-normal whitespace-nowrap"
+                  >
+                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                  </p>
+                </div>
+                <div class="shop-fillter3">مناسب کافه</div>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                  <p
+                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن پیش فرض:
+                  </p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                      fill="#F75F00"
+                    />
+                    <path
+                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                      fill="#F75F00"
+                      stroke="#F75F00"
+                    />
+                  </svg>
+                  <p
+                    class="text-base text-accent-orange font-medium py-2 px-4 rounded-lg w-full"
+                  >
+                    پلن برنزی
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="questions">
+        <div class="flex justify-center mt-20 mb-4 md:mb-10">
+          <p class="text-2xl font-bold text-txt-main lg:text-4xl">
+            سوالات متداول
+          </p>
+        </div>
+        <div
+          class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 max-w-3xl mx-auto gap-4"
+        >
+          <div
+            class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
+          >
+            <p class="text-txt-muted text-base font-semibold lg:text-lg">
+              پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+            </p>
+
+            <button class="dynamic-btn">
+              <img
+                src="./assets/icons/open.svg"
+                alt="open window"
+                srcset=""
+                class="close-btn"
+              />
+              <img
+                src="./assets/icons/closeP.svg "
+                alt="open window"
+                srcset=""
+                class="open-btn hidden"
+              />
+            </button>
+          </div>
+
+          <div class="dynamic-p hidden mb-4 text-txt-caption">
+            <p class="text-sm md:text-base font-normal">
+              خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+              می‌توانند منو را در مرورگر مشاهده کنند.
+            </p>
+          </div>
+        </div>
+        <div
+          class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 gap-4 mx-auto max-w-3xl"
+        >
+          <div
+            class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
+          >
+            <p class="text-txt-muted text-base font-semibold lg:text-lg">
+              پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+            </p>
+
+            <button class="dynamic-btn">
+              <img
+                src="./assets/icons/open.svg"
+                alt="open window"
+                srcset=""
+                class="close-btn"
+              />
+              <img
+                src="./assets/icons/closeP.svg "
+                alt="open window"
+                srcset=""
+                class="open-btn hidden"
+              />
+            </button>
+          </div>
+
+          <div class="dynamic-p hidden mb-4 text-txt-caption">
+            <p class="text-sm md:text-base font-normal">
+              خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+              می‌توانند منو را در مرورگر مشاهده کنند.
+            </p>
+          </div>
+        </div>
+        <div
+          class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl px-4 my-4 mx-auto gap-4 max-w-3xl"
+        >
+          <div
+            class="flex justify-between items-center py-2 lg:p-4 border-b border-b-surface-icon"
+          >
+            <p class="text-txt-muted text-base font-semibold lg:text-lg">
+              پلن آیا برای استفاده از منوا نیاز به نصب اپلیکیشن هست؟
+            </p>
+
+            <button class="dynamic-btn">
+              <img
+                src="./assets/icons/open.svg"
+                alt="open window"
+                srcset=""
+                class="close-btn"
+              />
+              <img
+                src="./assets/icons/closeP.svg "
+                alt="open window"
+                srcset=""
+                class="open-btn hidden"
+              />
+            </button>
+          </div>
+
+          <div class="dynamic-p hidden mb-4 text-txt-caption">
+            <p class="text-sm md:text-base font-normal">
+              خیر. منوی دیجیتال منوا تحت وب است و کاربران فقط با اسکن QR
+              می‌توانند منو را در مرورگر مشاهده کنند.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative pt-10 min-h-140.75 max-h-327">
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img
+          src="./assets/images/footer.svg"
+          alt=""
+          srcset=""
+          class="hidden sm:flex w-full object-cover object-top"
+        />
+        <img
+          src="./assets/images/footer-mobile.svg"
+          alt=""
+          srcset=""
+          class="sm:hidden w-full object-cover object-top"
+        />
+      </div>
+      <div class="relative z-10 m-4 md:m-15 lg:mx-30">
+        <div
+          class="mt-8 flex flex-col justify-center gap-4.5 rounded-2xl p-4 items-center mb-4"
+        >
+          <div class="flex flex-col justify-center items-center gap-4.5">
+            <h3 class="text-2xl font-bold text-txt-main text-center">
+              منوی دیجیتال خودت رو همین امروز راه‌اندازی کن
+            </h3>
+            <p
+              class="text-xs font-medium lg:text-sm lg:font-semibold text-txt-cta"
+            >
+              بدون دردسر، بدون چاپ، همیشه به‌روز و آماده استفاده روی موبایل.
+            </p>
+          </div>
+          <button
+            class="btn-signIn text-sm font-semibold w-full max-h-12 sm:max-w-40.5"
+          >
+            خرید اشتراک منوا
+          </button>
+        </div>
+        <div class="border border-white/16 m-4"></div>
+        <div class="flex flex-col sm:flex-row gap-10 mt-8">
+          <div class="flex flex-1 flex-col gap-4">
+            <div>
+              <img
+                src="./assets/icons/logo.svg"
+                alt=""
+                class="min-w-12 max-w-19"
+              />
+            </div>
+            <h3 class="text-xl font-medium text-txt-muted">
+              با ما همیشه در اوج بمانید
+            </h3>
+            <p class="text-base font-normal text-txt-caption">
+              <span class="text-txt-cta">منوا،</span> راهکاری ساده و مدرن برای
+              ساخت و مدیریت منوی دیجیتال بدون نیاز به اپلیکیشن.
+            </p>
+          </div>
+          <!-- Quick Access  -->
+          <div class="flex flex-1 flex-col gap-4">
+            <h2 class="text-xl font-semibold text-txt-muted whitespace-nowrap">
+              دسترسی سریع
+            </h2>
+            <ul class="flex flex-col gap-4">
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                قالب‌ها
+              </li>
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                پلن ها
+              </li>
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                خدمات
+              </li>
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                درباره ما
+              </li>
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                تماس با ما
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="flex flex-1 flex-col gap-4">
+            <h2 class="text-xl font-semibold text-txt-muted whitespace-nowrap">
+              خدمات دیگر
+            </h2>
+            <ul class="flex flex-col gap-4">
+              <li class="group footer-items whitespace-nowrap">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                نیاز به مشاوره دارم
+              </li>
+              <li class="group footer-items whitespace-nowrap">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                سوالات متدوال
+              </li>
+              <li class="group footer-items">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                بلاگ
+              </li>
+              <li class="group footer-items whitespace-nowrap">
+                <span
+                  ><svg
+                    class="stroke-txt-caption group-hover:stroke-txt-cta transition-colors"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 19.9201L8.48003 13.4001C7.71003 12.6301 7.71003 11.3701 8.48003 10.6001L15 4.08008"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                قوانین استفاده از منوا
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="flex flex-1 flex-col items-start gap-4">
+            <h2 class="text-xl font-semibold text-txt-muted whitespace-nowrap">
+              راه های ارتباطی
+            </h2>
+            <ul class="flex flex-col gap-4">
+              <li class="group footer-items-end whitespace-nowrap">
+                <span
+                  ><svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_2092_968)">
+                      <path
+                        d="M13.3 29.5C14.43 29.5 15.62 29.23 16.85 28.71C18.05 28.2 19.26 27.5 20.44 26.65C21.61 25.79 22.74 24.83 23.81 23.78C24.87 22.71 25.83 21.58 26.68 20.42C27.54 19.22 28.23 18.02 28.72 16.86C29.24 15.62 29.5 14.42 29.5 13.29C29.5 12.51 29.36 11.77 29.09 11.08C28.81 10.37 28.36 9.71 27.75 9.14C26.98 8.38 26.1 8 25.16 8C24.77 8 24.37 8.09 24.03 8.25C23.64 8.43 23.31 8.7 23.07 9.06L20.75 12.33C20.54 12.62 20.38 12.9 20.27 13.18C20.14 13.48 20.07 13.78 20.07 14.07C20.07 14.45 20.18 14.82 20.39 15.17C20.54 15.44 20.77 15.73 21.06 16.02L21.74 16.73C21.73 16.76 21.72 16.78 21.71 16.8C21.59 17.01 21.35 17.37 20.89 17.91C20.4 18.47 19.94 18.98 19.48 19.45C18.89 20.03 18.4 20.49 17.94 20.87C17.37 21.35 17 21.59 16.78 21.7L16.8 21.75L16.07 21.03C15.76 20.72 15.46 20.49 15.17 20.34C14.62 20 13.92 19.94 13.22 20.23C12.96 20.34 12.68 20.49 12.38 20.7L9.06 23.06C8.69 23.31 8.42 23.63 8.26 24.01C8.11 24.39 8.04 24.74 8.04 25.09C8.04 25.57 8.15 26.05 8.36 26.5C8.57 26.95 8.83 27.34 9.16 27.7C9.73 28.33 10.35 28.78 11.07 29.07C11.76 29.35 12.51 29.5 13.3 29.5ZM25.16 9.5C25.71 9.5 26.22 9.74 26.71 10.22C27.17 10.65 27.49 11.12 27.69 11.63C27.9 12.15 28 12.7 28 13.29C28 14.22 27.78 15.23 27.34 16.27C26.89 17.33 26.26 18.43 25.46 19.53C24.66 20.63 23.75 21.7 22.75 22.71C21.75 23.7 20.67 24.62 19.56 25.43C18.48 26.22 17.37 26.86 16.27 27.32C14.56 28.05 12.96 28.22 11.64 27.67C11.13 27.46 10.68 27.14 10.27 26.68C10.04 26.43 9.86 26.16 9.71 25.84C9.59 25.59 9.53 25.33 9.53 25.07C9.53 24.91 9.56 24.75 9.64 24.57C9.67 24.51 9.73 24.4 9.92 24.27L13.24 21.91C13.44 21.77 13.62 21.67 13.79 21.6C14.01 21.51 14.1 21.42 14.44 21.63C14.64 21.73 14.82 21.88 15.02 22.08L15.78 22.83C16.17 23.21 16.77 23.3 17.23 23.13L17.5 23.01C17.91 22.79 18.39 22.45 18.92 22C19.4 21.59 19.92 21.11 20.55 20.49C21.04 19.99 21.53 19.46 22.04 18.87C22.51 18.32 22.85 17.85 23.06 17.46L23.18 17.16C23.24 16.93 23.26 16.8 23.26 16.66C23.26 16.3 23.13 15.98 22.88 15.73L22.13 14.95C21.93 14.75 21.78 14.56 21.68 14.39C21.6 14.26 21.57 14.15 21.57 14.05C21.57 13.97 21.6 13.85 21.65 13.73C21.72 13.57 21.83 13.39 21.97 13.2L24.29 9.92C24.39 9.78 24.51 9.68 24.66 9.61C24.82 9.54 24.99 9.5 25.16 9.5ZM16.8 21.76L16.96 22.44L16.69 21.74C16.74 21.73 16.78 21.74 16.8 21.76Z"
+                        fill="#B3BCD4"
+                      />
+                      <path
+                        d="M12.25 16.5C12.66 16.5 13 16.16 13 15.75C13 15.39 13.36 14.64 13.96 14C14.55 13.37 15.2 13 15.75 13C16.16 13 16.5 12.66 16.5 12.25C16.5 11.84 16.16 11.5 15.75 11.5C14.78 11.5 13.76 12.02 12.87 12.97C12.04 13.86 11.5 14.95 11.5 15.75C11.5 16.16 11.84 16.5 12.25 16.5Z"
+                        fill="#B3BCD4"
+                      />
+                      <path
+                        d="M8.75 16.5C9.16 16.5 9.5 16.16 9.5 15.75C9.5 12.3 12.3 9.5 15.75 9.5C16.16 9.5 16.5 9.16 16.5 8.75C16.5 8.34 16.16 8 15.75 8C11.48 8 8 11.48 8 15.75C8 16.16 8.34 16.5 8.75 16.5Z"
+                        fill="#B3BCD4"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_2092_968"
+                        x="-1.25"
+                        y="-1.25"
+                        width="40"
+                        height="40"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.701961 0 0 0 0 0.737255 0 0 0 0 0.831373 0 0 0 0.48 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_2092_968"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_2092_968"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </span>
+                09109452820
+              </li>
+              <li class="group footer-items-end whitespace-nowrap gap-2 px-2">
+                <span
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.56995 22.6998C3.22995 22.6998 1.24995 20.7198 1.24995 18.3798V12.2198C1.19995 9.2998 2.27995 6.5498 4.29995 4.4898C6.31995 2.4398 9.02995 1.2998 11.95 1.2998C17.91 1.2998 22.75 6.14981 22.75 12.0998V18.2598C22.75 20.6398 20.81 22.5798 18.43 22.5798C16.09 22.5798 14.11 20.5998 14.11 18.2598V15.4498C14.11 13.9998 15.25 12.8598 16.7 12.8598C18.15 12.8598 19.29 13.9998 19.29 15.4498V18.4798C19.29 18.8898 18.95 19.2298 18.54 19.2298C18.13 19.2298 17.79 18.8898 17.79 18.4798V15.4498C17.79 14.7698 17.24 14.3598 16.7 14.3598C16.02 14.3598 15.61 14.9098 15.61 15.4498V18.2598C15.61 19.7898 16.9 21.0798 18.43 21.0798C19.96 21.0798 21.25 19.7898 21.25 18.2598V12.0998C21.25 6.9698 17.08 2.7998 11.95 2.7998C9.43995 2.7998 7.10995 3.7698 5.36995 5.5398C3.62995 7.3098 2.69995 9.6798 2.74995 12.1998V18.3798C2.74995 19.9098 4.03995 21.1998 5.56995 21.1998C7.09995 21.1998 8.38995 19.9098 8.38995 18.3798V15.5698C8.38995 14.8898 7.83995 14.4798 7.29995 14.4798C6.61995 14.4798 6.20995 15.0298 6.20995 15.5698V18.4898C6.20995 18.8998 5.86995 19.2398 5.45995 19.2398C5.04995 19.2398 4.70995 18.8998 4.70995 18.4898V15.5698C4.70995 14.1198 5.84995 12.9798 7.29995 12.9798C8.74995 12.9798 9.88995 14.1198 9.88995 15.5698V18.3798C9.88995 20.7198 7.90995 22.6998 5.56995 22.6998Z"
+                      fill="#B3BCD4"
+                    />
+                  </svg>
+                </span>
+                02136154390
+              </li>
+              <li class="group footer-items-end whitespace-nowrap">
+                <span>
+                  <svg
+                    width="38"
+                    height="35"
+                    viewBox="0 0 38 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_2092_990)">
+                      <path
+                        d="M23.75 26.5H13.75C10.1 26.5 8 24.4 8 20.75V13.75C8 10.1 10.1 8 13.75 8H23.75C27.4 8 29.5 10.1 29.5 13.75V20.75C29.5 24.4 27.4 26.5 23.75 26.5ZM13.75 9.5C10.89 9.5 9.5 10.89 9.5 13.75V20.75C9.5 23.61 10.89 25 13.75 25H23.75C26.61 25 28 23.61 28 20.75V13.75C28 10.89 26.61 9.5 23.75 9.5H13.75Z"
+                        fill="#B3BCD4"
+                      />
+                    </g>
+                    <g filter="url(#filter1_d_2092_990)">
+                      <path
+                        d="M18.7498 18.12C17.9098 18.12 17.0598 17.86 16.4098 17.33L13.2798 14.83C12.9598 14.57 12.8998 14.1 13.1598 13.78C13.4198 13.46 13.8898 13.4 14.2098 13.66L17.3398 16.16C18.0998 16.77 19.3898 16.77 20.1498 16.16L23.2798 13.66C23.5998 13.4 24.0798 13.45 24.3298 13.78C24.5898 14.1 24.5398 14.58 24.2098 14.83L21.0798 17.33C20.4398 17.86 19.5898 18.12 18.7498 18.12Z"
+                        fill="#B3BCD4"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_2092_990"
+                        x="0"
+                        y="0"
+                        width="37.5"
+                        height="34.5"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.701961 0 0 0 0 0.737255 0 0 0 0 0.831373 0 0 0 0.48 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_2092_990"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_2092_990"
+                          result="shape"
+                        />
+                      </filter>
+                      <filter
+                        id="filter1_d_2092_990"
+                        x="4.99707"
+                        y="5.49414"
+                        width="27.4985"
+                        height="20.626"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.701961 0 0 0 0 0.737255 0 0 0 0 0.831373 0 0 0 0.48 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_2092_990"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_2092_990"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </span>
+                sales@menoa.ir
+              </li>
+            </ul>
+            <div
+              class="change-bg flex flex-col border border-surface-icon bg-transparent rounded-xl p-4 gap-4"
+            >
+              <p class="text-sm font-semibold text-txt-caption">آدرس :</p>
+              <p class="text-xs font-normal text-txt-caption">
+                تهران، قرچک، شهرک ولی‌عصر، خیابان آیت‌الله مصباح یزدی، کوچه
+                بوستان ۱۲، پلاک ۸۰، طبقه ۳، واحد ۵
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
