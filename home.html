@@ -932,19 +932,18 @@
             </div>
           </div>
         </section>
-        <section id="customers" class="w-full">
+        <section id="customers" class="w-full overflow-hidden">
           <div
-            class="flex flex-col justify-center items-center gap-8 mt-20 w-full"
+            class="flex flex-col justify-center items-center gap-8 mt-20 w-full max-w-7xl mx-auto px-4"
           >
             <p class="text-xl font-semibold text-txt-main whitespace-nowrap">
               برخی از مشتریانی که به ما اعتماد کرده‌اند
             </p>
-
-            <div class="swiper commentsSwiper w-full">
+            <div class="swiper customersSwiper w-full mx-auto">
               <div class="swiper-wrapper">
-                <div class="swiper-slide w-auto!">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -956,39 +955,7 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
-                      <div
-                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
-                      >
-                        <img src="./assets/icons/bag.svg" alt="" />
-                        <p class="text-sm font-semibold text-txt-placeholder">
-                          کافی شاپ
-                        </p>
-                      </div>
-                      <div class="flex flex-row items-center gap-1.5">
-                        <img src="./assets/icons/location.svg" alt="" />
-                        <p class="text-sm font-semibold text-txt-placeholder">
-                          یزد
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide w-auto!">
-                  <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
-                  >
-                    <img
-                      src="./assets/icons/customer-logo.svg"
-                      alt=""
-                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
-                    />
-                    <p
-                      class="font-semibold text-base lg:text-lg text-txt-muted"
-                    >
-                      کافی شاپ هتل هومن
-                    </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -1007,9 +974,9 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide w-auto!">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -1021,7 +988,7 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -1039,9 +1006,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container w-62 lg:w-67 min-h-41"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -1053,7 +1020,71 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment shrink-0">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-auto shrink-0">
+                  <div
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-auto shrink-0">
+                  <div
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -1075,6 +1106,7 @@
             </div>
           </div>
         </section>
+
         <section id="questions">
           <div class="flex justify-center mt-20 mb-4 md:mb-10">
             <p class="text-2xl font-bold text-txt-main lg:text-4xl">

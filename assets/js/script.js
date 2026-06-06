@@ -23,11 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn?.addEventListener("click", () => swiper.slideNext());
 
   // Swiper comments
-  new Swiper(".commentsSwiper", {
-    slidesPerView: "auto",
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 16,
-     centeredSlides: true,
-  });
+const customersSwiper = new Swiper(".customersSwiper", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+    centeredSlides: true, // پیشفرض موبایل
+
+  breakpoints: {
+    1024: { // lg
+      centeredSlides: false,
+      slidesPerView: 3,   // یا 4 هرچقدر میخوای
+    },
+  },
+
+  observer: true,
+  observeParents: true,
+  
+});
+
+window.addEventListener("load", () => {
+  customersSwiper.update();
+});
+
 });
