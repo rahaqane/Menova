@@ -151,6 +151,9 @@
     .dynamic-btn{
         @apply flex items-center justify-center p-1 bg-txt-cta/24 rounded-full w-9 h-9 lg:w-9.5 lg:h-9.5 cursor-pointer
     }
+    .dynamicbtn{
+        @apply flex items-center justify-center p-1  rounded-full w-6.5 h-6.5 cursor-pointer border border-border-main
+    }
     .footer-items{
         @apply flex flex-row-reverse justify-between text-txt-caption  hover:text-txt-cta text-sm font-normal cursor-pointer
     }
