@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // FAQ accordion
-  document.querySelectorAll(".dynamic-btn").forEach((btn) => {
+  document.querySelectorAll(".dynamic-btn, .dynamicbtn, .dynamicarrow ").forEach((btn) => {
     btn.addEventListener("click", () => {
       const card = btn.closest(".change-bg");
       const dynamicElements = card.querySelectorAll(".dynamic-p, .open-close-btn");
@@ -13,11 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       openBtnIcon?.classList.toggle("hidden");
       closeBtnIcon?.classList.toggle("hidden");
 
+      if (!card.classList.contains("no-bg-toggle")) {
       card.classList.toggle("bg-transparent", !isClosed);
       card.classList.toggle("bg-surface", isClosed);
+    }
     });
   });
 
+  
   // drop down 
 document.querySelectorAll(".dropdown").forEach((dropdown) => {
   const toggle = dropdown.querySelector(".dropdown-toggle");
