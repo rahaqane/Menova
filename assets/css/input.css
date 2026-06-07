@@ -235,6 +235,22 @@
   width: auto; /* بسیار مهم برای slidesPerView: "auto" */
   transition: transform 0.3s ease;
 }
+.plansForSaleSwiper {
+  overflow: hidden; /* یا visible اگه می‌خوای کارت‌های کنار دیده بشن */
+}
+
+.plansForSaleSwiper .swiper-slide {
+  width: 280px; /* عرض ثابت برای موبایل با slidesPerView: "auto" */
+}
+
+@media (min-width: 1024px) {
+  .plansForSaleSwiper .swiper-slide {
+    width: auto;
+  }
+}
+
+
+
 }
 @utility scrollbar-hide {
   -ms-overflow-style: none;

@@ -60,7 +60,7 @@ document.addEventListener("click", (e) => {
   const nextBtn = document.querySelector(".custom-next");
   nextBtn?.addEventListener("click", () => swiper.slideNext());
 
-  // Swiper comments
+  // Swiper customers
 const customersSwiper = new Swiper(".customersSwiper", {
   loop: true,
   grabCursor: true,
@@ -80,10 +80,28 @@ const customersSwiper = new Swiper(".customersSwiper", {
   
 });
 
-window.addEventListener("load", () => {
-  customersSwiper.update();
+
+// plansForSaleSwiper
+const plansForSaleSwiper = new Swiper(".plansForSaleSwiper", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  centeredSlides: true,
+  breakpoints: {
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
 });
 
+
+window.addEventListener("load", () => {
+  customersSwiper.update();
+    plansForSaleSwiper.update();
+});
 });
 
 // drop down
