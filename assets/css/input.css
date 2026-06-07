@@ -124,6 +124,9 @@
     .btn-signIn{
         @apply flex justify-center items-center whitespace-nowrap bg-primary text-bg py-2 px-4 rounded-lg hover:bg-transparent hover:text-primary hover:border hover:border-primary cursor-pointer
     }
+    .btn-plans{
+        @apply flex justify-center items-center whitespace-nowrap bg-[#E6C89C14] hover:bg-primary hover:text-bg py-2 px-4 rounded-lg  text-primary border border-primary cursor-pointer
+    }
     .navbar-items{
         @apply text-txt-muted text-[16px] font-medium hover:text-txt-cta cursor-pointer
     }
