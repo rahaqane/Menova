@@ -58,21 +58,23 @@
       <main class="m-4 md:m-15 lg:mx-30">
         <section id="mobile-slider">
           <div
-            class="flex flex-col sm:flex-row-reverse items-center justify-between gap-10"
+            class="relative flex flex-col lg:flex-row-reverse items-center justify-between gap-10 w-full h-full mx-auto"
           >
-            <div class="slider-wrapper flex items-center gap-4">
+            <div
+              class="slider-wrapper flex items-center gap-4 flex-1 justify-center lg:justify-start lg:-mt-15"
+            >
               <div class="swiper mySwiper swiper-custom">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
                       src="./assets/images/home-slider.svg"
                       alt=""
-                      class="lg:hidden"
+                      class="md:hidden"
                     />
                     <img
                       src="./assets/images/frame65.svg"
                       alt=""
-                      class="hidden lg:flex"
+                      class="hidden md:flex"
                     />
                   </div>
                   <div class="swiper-slide">
@@ -112,48 +114,54 @@
                 />
               </button>
             </div>
+
             <div
-              class="gap-4 flex flex-col justify-center lg:items-start lg:justify-start"
+              class="flex flex-col justify-center gap-4 max-w-[256px] pb-8 -mt-20 lg:items-start lg:justify-start lg:mt-0 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2 xl:py-0 xl:-mt-10"
             >
-              <h3 class="text-2xl font-semibold text-txt-cta">
+              <h3 class="text-2xl font-semibold text-txt-cta whitespace-nowrap">
                 قالب پاپ‌اِستریت
               </h3>
               <p class="text-sm font-bold hidden md:block text-txt-placeholder">
                 مناسب پیتزا فروشی‌ها، برگر شاپ‌ها و کافه-رستوران‌های مدرن.
               </p>
-              <button class="btn-sale-plan w-full">مشاهده این قالب</button>
+              <button class="btn-sale-plan w-full lg:w-33.25">
+                مشاهده این قالب
+              </button>
             </div>
-            <div
-              class="flex flex-col relative z-10 justify-start items-start gap-7 max-w-139"
-            >
-              <img
-                src="./assets/icons/easy.svg"
-                alt=""
-                class="absolute left-0 -top-4 md:hidden"
-              />
-              <img
-                src="./assets/icons/easy2.svg"
-                alt=""
-                class="hidden md:block absolute -left-20 -top-20"
-              />
 
-              <h1
-                class="text-txt-main text-4xl lg:text-7xl font-bold text-center leading-12 lg:leading-20 whitespace-nowrap"
-              >
-                منوی دیجیتال منوا
-              </h1>
+            <div
+              class="flex flex-col z-10 justify-start items-start xl:items-end gap-7 lg:max-w-139 lg:flex-1"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/icons/easy.svg"
+                  alt=""
+                  class="absolute left-0 -top-8 xl:hidden"
+                />
+                <img
+                  src="./assets/icons/easy2.svg"
+                  alt=""
+                  class="hidden xl:block absolute -left-20 -top-20"
+                />
+                <h1
+                  class="text-txt-main text-4xl xl:text-7xl font-bold text-center md:text-right whitespace-nowrap"
+                >
+                  منوی دیجیتال منوا
+                </h1>
+              </div>
 
               <div
-                class="flex flex-col justify-center items-start gap-3 md:gap-6"
+                class="flex flex-col justify-center items-start gap-8 md:text-right"
               >
-                <p class="text-txt-caption text-sx font-normal lg:text-base">
+                <p
+                  class="text-txt-caption text-sx font-normal xl:text-base md:text-right"
+                >
                   قالب‌های آماده منوی دیجیتال برای نمایش حرفه‌ای، به‌روزرسانی
                   سریع و تجربه‌ای مدرن برای مشتریان شما. قابل استفاده بر روی
                   <span class="text-txt-muted">اندروید</span> و
                   <span class="text-txt-muted">کامپیوتر</span>
                 </p>
-
-                <div class="flex gap-4 w-full max-w-[326px] lg:max-w-[370px]">
+                <div class="flex gap-4 w-full h-12 lg:max-w-[370px]">
                   <button class="btn-signIn text-sm font-semibold w-full">
                     خرید اشتراک منوا
                   </button>
@@ -165,6 +173,7 @@
             </div>
           </div>
         </section>
+
         <section>
           <div
             class="flex flex-col items-center justify-center gap-7 lg:gap-14 mt-20"
@@ -307,13 +316,17 @@
           </div>
         </section>
         <section id="options">
-          <div class="flex flex-col justify-between items-center mt-20 w-full">
+          <div
+            class="flex flex-col justify-between items-center mt-20 lg:mt-30 w-full"
+          >
             <p
               class="lg:text-4xl text-2xl font-bold text-txt-main whitespace-nowrap"
             >
               امکانات منو دیجیتال منوا
             </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 w-full">
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 w-full justify-items-center"
+            >
               <div
                 class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md:order-1 order-3 pt-10"
               >
@@ -322,7 +335,7 @@
                   alt=""
                   class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
                 />
-                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                <h3 class="text-base lg:text-xl font-semibold text-txt-main">
                   منوی دیجیتال اختصاصی
                 </h3>
                 <p
@@ -333,14 +346,14 @@
                 </p>
               </div>
               <div
-                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67 md:order-2 order-4 pt-10"
+                class="flex flex-col gap-4.5 items-center justify-center lg:gap-6 max-w-67lg:order-2 order-4 pt-10"
               >
                 <img
                   src="./assets/icons/circle1.svg"
                   alt=""
                   class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
                 />
-                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                <h3 class="text-base lg:text-xl font-semibold text-txt-main">
                   منوی دیجیتال چندزبانه
                 </h3>
                 <p
@@ -358,7 +371,7 @@
                   alt=""
                   class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
                 />
-                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                <h3 class="text-base lg:text-xl font-semibold text-txt-main">
                   پرداخت آنلاین سفارشات
                 </h3>
                 <p
@@ -376,7 +389,7 @@
                   alt=""
                   class="min-w-16 min-h-16 max-w-26 max-h-26 w-full"
                 />
-                <h3 class="text-base md:text-xl font-semibold text-txt-main">
+                <h3 class="text-base lg:text-xl font-semibold text-txt-main">
                   مدیریت ارسال بیرون‌بر
                 </h3>
                 <p
@@ -393,127 +406,124 @@
         </section>
         <section class="-mx-4 md:-mx-15 lg:-mx-30">
           <div
-            class="relative flex flex-col justify-center items-start gap-8 lg:gap-12"
+            class="relative flex flex-col justify-center gap-8 lg:gap-12 mt-20 lg:mt-30 max-h-254"
           >
-            <div class="mr-4 md:mr-15 lg:mr-30">
-              <h3 class="text-white text-2xl font-bold text-center lg:text-4xl">
-                منوا چگونه کار می‌کند ؟
-              </h3>
-              <ul class="flex flex-col gap-4">
-                <li class="flex items-center gap-4 sm:gap-6">
-                  <div class="flex flex-col items-center gap-8">
-                    <div
-                      class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
-                    >
-                      1
-                    </div>
-                    <div
-                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
-                    ></div>
+            <h3 class="text-white text-2xl font-bold text-center lg:text-4xl">
+              منوا چگونه کار می‌کند ؟
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-8">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    1
                   </div>
-                  <div class="flex flex-col items-start">
-                    <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
-                      ثبت‌نام و ساخت منو
-                    </h3>
-                    <p
-                      class="text-sm font-normal lg:text-[16px] text-txt-caption"
-                    >
-                      در کمتر از چند دقیقه منوی دیجیتال خود را ایجاد کنید و
-                      آیتم‌ها را اضافه کنید.
-                    </p>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    ثبت‌نام و ساخت منو
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    در کمتر از چند دقیقه منوی دیجیتال خود را ایجاد کنید و
+                    آیتم‌ها را اضافه کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    2
                   </div>
-                </li>
-                <li class="flex items-center gap-4 sm:gap-6">
-                  <div class="flex flex-col items-center gap-4">
-                    <div
-                      class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
-                    >
-                      2
-                    </div>
-                    <div
-                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
-                    ></div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    شخصی‌سازی ظاهر
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    رنگ‌ها، دسته‌بندی‌ها و تصاویر را مطابق برند خود تنظیم کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    3
                   </div>
-                  <div class="flex flex-col items-start">
-                    <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
-                      شخصی‌سازی ظاهر
-                    </h3>
-                    <p
-                      class="text-sm font-normal lg:text-[16px] text-txt-caption"
-                    >
-                      رنگ‌ها، دسته‌بندی‌ها و تصاویر را مطابق برند خود تنظیم
-                      کنید.
-                    </p>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    اشتراک‌گذاری با مشتری
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    لینک یا QR منوی خود را به‌راحتی در اختیار مشتریان قرار دهید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    4
                   </div>
-                </li>
-                <li class="flex items-center gap-4 sm:gap-6">
-                  <div class="flex flex-col items-center gap-4">
-                    <div
-                      class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
-                    >
-                      3
-                    </div>
-                    <div
-                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
-                    ></div>
+                  <div
+                    class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                  ></div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    ثبت سفارش و مدیریت
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    سفارش‌ها را دریافت کنید، پرداخت‌ها را مدیریت و همه‌چیز را
+                    آنلاین کنترل کنید.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 sm:gap-6">
+                <div class="flex flex-col items-center gap-4">
+                  <div
+                    class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                  >
+                    5
                   </div>
-                  <div class="flex flex-col items-start">
-                    <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
-                      اشتراک‌گذاری با مشتری
-                    </h3>
-                    <p
-                      class="text-sm font-normal lg:text-[16px] text-txt-caption"
-                    >
-                      لینک یا QR منوی خود را به‌راحتی در اختیار مشتریان قرار
-                      دهید.
-                    </p>
-                  </div>
-                </li>
-                <li class="flex items-center gap-4 sm:gap-6">
-                  <div class="flex flex-col items-center gap-4">
-                    <div
-                      class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
-                    >
-                      4
-                    </div>
-                    <div
-                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
-                    ></div>
-                  </div>
-                  <div class="flex flex-col items-start">
-                    <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
-                      ثبت سفارش و مدیریت
-                    </h3>
-                    <p
-                      class="text-sm font-normal lg:text-[16px] text-txt-caption"
-                    >
-                      سفارش‌ها را دریافت کنید، پرداخت‌ها را مدیریت و همه‌چیز را
-                      آنلاین کنترل کنید.
-                    </p>
-                  </div>
-                </li>
-                <li class="flex items-center gap-4 sm:gap-6">
-                  <div class="flex flex-col items-center gap-4">
-                    <div
-                      class="flex justify-senter items-senter px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
-                    >
-                      5
-                    </div>
-                  </div>
-                  <div class="flex flex-col items-start">
-                    <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
-                      همراهی و پشتیبانی در تمام مسیر
-                    </h3>
-                    <p
-                      class="text-sm font-normal lg:text-[16px] text-txt-caption"
-                    >
-                      از راه‌اندازی اولیه تا مدیریت روزانه منو، تیم پشتیبانی
-                      منوا در کنار شماست
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg md:text-xl font-semibold text-txt-muted">
+                    همراهی و پشتیبانی در تمام مسیر
+                  </h3>
+                  <p
+                    class="text-sm font-normal lg:text-[16px] text-txt-caption"
+                  >
+                    از راه‌اندازی اولیه تا مدیریت روزانه منو، تیم پشتیبانی منوا
+                    در کنار شماست
+                  </p>
+                </div>
+              </li>
+            </ul>
+
             <div
               class="absolute inset-0 z-0 pointer-events-none w-full h-full top-0"
             >
@@ -521,15 +531,15 @@
                 src="./assets/images/bg2.svg"
                 alt=""
                 srcset=""
-                class="hidden sm:flex w-full"
+                class="hidden md:flex w-full"
               />
             </div>
-            <div class="sm:hidden w-full pointer-events-none">
+            <div class="md:hidden w-full pointer-events-none">
               <img
                 src="./assets/images/bg2-mobile.svg"
                 alt=""
                 srcset=""
-                class="w-full"
+                class="w-full max-h-[1017px] object-cover"
               />
             </div>
           </div>
@@ -922,19 +932,18 @@
             </div>
           </div>
         </section>
-        <section id="customers" class="w-full">
+        <section id="customers" class="w-full overflow-hidden">
           <div
-            class="flex flex-col justify-center items-center gap-8 mt-20 w-full"
+            class="flex flex-col justify-center items-center gap-8 mt-20 w-full max-w-7xl mx-auto px-4"
           >
             <p class="text-xl font-semibold text-txt-main whitespace-nowrap">
               برخی از مشتریانی که به ما اعتماد کرده‌اند
             </p>
-
-            <div class="swiper commentsSwiper w-full">
+            <div class="swiper customersSwiper w-full mx-auto">
               <div class="swiper-wrapper">
-                <div class="swiper-slide w-auto!">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -946,39 +955,7 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
-                      <div
-                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
-                      >
-                        <img src="./assets/icons/bag.svg" alt="" />
-                        <p class="text-sm font-semibold text-txt-placeholder">
-                          کافی شاپ
-                        </p>
-                      </div>
-                      <div class="flex flex-row items-center gap-1.5">
-                        <img src="./assets/icons/location.svg" alt="" />
-                        <p class="text-sm font-semibold text-txt-placeholder">
-                          یزد
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide w-auto!">
-                  <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
-                  >
-                    <img
-                      src="./assets/icons/customer-logo.svg"
-                      alt=""
-                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
-                    />
-                    <p
-                      class="font-semibold text-base lg:text-lg text-txt-muted"
-                    >
-                      کافی شاپ هتل هومن
-                    </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -997,9 +974,9 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide w-auto!">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -1011,7 +988,7 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -1029,9 +1006,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide w-auto!">
+                <div class="swiper-slide !w-auto shrink-0">
                   <div
-                    class="customers-comment-container min-w-62 max-w-67 min-h-41 max-h-48"
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
                   >
                     <img
                       src="./assets/icons/customer-logo.svg"
@@ -1043,7 +1020,71 @@
                     >
                       کافی شاپ هتل هومن
                     </p>
-                    <div class="customers-comment min-w-61 max-w-68">
+                    <div class="customers-comment shrink-0">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-auto shrink-0">
+                  <div
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment">
+                      <div
+                        class="flex flex-row items-center gap-1.5 whitespace-nowrap"
+                      >
+                        <img src="./assets/icons/bag.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          کافی شاپ
+                        </p>
+                      </div>
+                      <div class="flex flex-row items-center gap-1.5">
+                        <img src="./assets/icons/location.svg" alt="" />
+                        <p class="text-sm font-semibold text-txt-placeholder">
+                          یزد
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-auto shrink-0">
+                  <div
+                    class="customers-comment-container w-[260px] lg:w-[280px] min-h-[164px]"
+                  >
+                    <img
+                      src="./assets/icons/customer-logo.svg"
+                      alt=""
+                      class="w-23 h-16.5 lg:w-26 lg:h-18.5"
+                    />
+                    <p
+                      class="font-semibold text-base lg:text-lg text-txt-muted"
+                    >
+                      کافی شاپ هتل هومن
+                    </p>
+                    <div class="customers-comment">
                       <div
                         class="flex flex-row items-center gap-1.5 whitespace-nowrap"
                       >
@@ -1065,6 +1106,7 @@
             </div>
           </div>
         </section>
+
         <section id="questions">
           <div class="flex justify-center mt-20 mb-4 md:mb-10">
             <p class="text-2xl font-bold text-txt-main lg:text-4xl">
