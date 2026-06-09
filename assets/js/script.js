@@ -96,6 +96,27 @@ const plansForSaleSwiper = new Swiper(".plansForSaleSwiper", {
     },
   },
 });
+// articleSwiper
+const articleSwiper = new Swiper(".articleSwiper", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1.15,
+  spaceBetween: 16,
+  centeredSlides: true,
+  autoHeight: false,
+   navigation: {
+    nextEl: ".leftbtn",
+    prevEl: ".rightbtn",
+  },
+  breakpoints: {
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+});
+
 
 
 window.addEventListener("load", () => {

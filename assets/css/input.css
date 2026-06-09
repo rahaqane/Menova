@@ -190,7 +190,7 @@
     focus:border-primary rounded-lg border border-surface-icon 
     text-txt-placeholder focus:text-primary whitespace-nowrap 
     font-medium text-sm lg:text-base;
-}
+    }
    
     .select-btn{
     @apply bg-surface py-2 px-3 flex items-center gap-2 rounded-lg border border-surface-icon text-secondray focus-within:border-primary focus-within:text-primary  whitespace-nowrap w-full
@@ -206,6 +206,9 @@
     .shop-fillter3{
                 @apply    flex justify-center items-center max-h-8 p-2 rounded-lg text-sm font-semibold border text-[#A7661D] bg-[#A7661D14] border-[#A7661D] whitespace-nowrap 
 
+    }
+    .social{
+        @apply flex justify-center items-center p-2 rounded-full bg-surface border border-border-main
     }
 
     /* swiper home */
@@ -248,6 +251,14 @@
 
 .plansForSaleSwiper .swiper-slide {
   width: 280px; /* عرض ثابت برای موبایل با slidesPerView: "auto" */
+}
+.articleSwiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.articleSwiper .swiper-slide {
+  height: auto;
+  display: flex; /* ← این خط مهمه */
 }
 
 @media (min-width: 1024px) {
