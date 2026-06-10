@@ -49,11 +49,18 @@
                   <p class="text-base font-medium text-txt-muted">
                     شماره موبایل
                   </p>
-                  <input
-                    type="text"
-                    placeholder="نام کامل خود را وارد کنید..."
-                    class="bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder text-txt-placeholder"
-                  />
+                  <div
+                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
+                  >
+                    <img src="./assets/icons/email.svg" class="w-5 h-5" />
+
+                    <input
+                      type="text"
+                      placeholder="مثلا ...۰۹۱۳"
+                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
+                      class="bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder text-txt-placeholder"
+                    />
+                  </div>
                 </div>
                 <div class="flex flex-col gap-2">
                   <p class="text-base font-medium text-txt-muted">رمز عبور</p>
@@ -61,12 +68,12 @@
                   <div
                     class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
                   >
-                    <img src="./assets/icons/email.svg" class="w-5 h-5" />
+                    <img src="./assets/icons/lock.svg" class="w-5 h-5" />
 
                     <input
                       id="passwordInput"
                       type="password"
-                      placeholder="مثلا 1234..."
+                      placeholder="رمز عبور خود را وارد کنید..."
                       class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
                     />
 
