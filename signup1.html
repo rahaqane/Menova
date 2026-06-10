@@ -20,94 +20,76 @@
       <main>
         <section>
           <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-10">
-            <div class="lg:w-1/2 w-full">
+            <div class="relative lg:w-1/2 w-full shrink-0">
+              <div
+                class="lg:hidden absolute top-100 inset-0 bg-linear-to-t from-surface to-transparent"
+              ></div>
               <img
                 src="./assets/images/s1.webp"
                 class="w-full h-full min-h-screen object-cover"
               />
             </div>
             <form
-              class="flex flex-col bg-surface border border-surface-icon rounded-[28px] px-4 py-5 gap-5 w-full"
+              class="flex flex-col px-4 py-5 gap-5 flex-1 lg:mr-30 lg:mt-30"
             >
-              <div class="flex flex-col md:flex-row w-full gap-2">
+              <div class="flex flex-col gap-2 w-full">
+                <h3 class="text-2xl font-bold lg:text-4xl text-txt-main">
+                  ورود به پنل مدیریت منوا
+                </h3>
+                <p
+                  class="flex gap-2 text-txt-placeholder text-sm font-normal sm"
+                >
+                  حساب کاربری ندارید ؟
+                  <span class="text-txt-cta">ثبت نام </span>
+                </p>
+              </div>
+
+              <div class="flex flex-col w-full gap-2">
                 <div class="flex flex-col gap-2">
                   <p class="text-base font-medium text-txt-muted">
-                    نام و نام خانوادگی
+                    شماره موبایل
                   </p>
                   <input
                     type="text"
                     placeholder="نام کامل خود را وارد کنید..."
-                    class="bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder"
+                    class="bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder text-txt-placeholder"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="text-base font-medium text-txt-muted">شماره تماس</p>
-                  <input
-                    type="text"
-                    placeholder="مثلا ...0913"
-                    class="bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-col w-full gap-2">
-                <p class="text-base font-medium text-txt-muted">موضوع</p>
-                <div class="dropdown relative w-full lg:inline-block">
-                  <button
-                    type="button"
-                    class="dropdown-toggle bg-surface-elevated border p-2 rounded-xl border-surface-icon text-txt-placeholder group flex items-center justify-between gap-4 w-full"
-                  >
-                    <div class="flex items-center gap-2">
-                      <span class="selected-text whitespace-nowrap">
-                        موضوع پیغام خود را انتخاب کنید</span
-                      >
-                    </div>
-
-                    <svg
-                      class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
+                  <p class="text-base font-medium text-txt-muted">رمز عبور</p>
 
                   <div
-                    class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
+                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
                   >
-                    <div class="dropdown-item fillter cursor-pointer">
-                      گزینه ها
-                    </div>
-                    <div class="dropdown-item fillter cursor-pointer">
-                      گزینه ها
-                    </div>
-                    <div class="dropdown-item fillter cursor-pointer">
-                      گزینه ها
-                    </div>
+                    <img src="./assets/icons/email.svg" class="w-5 h-5" />
+
+                    <input
+                      id="passwordInput"
+                      type="password"
+                      placeholder="مثلا 1234..."
+                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
+                    />
+
+                    <img
+                      id="togglePassword"
+                      src="./assets/icons/eye.svg"
+                      class="w-5 h-5"
+                    />
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col w-full gap-2">
-                <p class="text-base font-medium text-txt-muted">متن پیام</p>
-                <textarea
-                  placeholder="متن اتقاد، پیشنهاد، درخواست..."
-                  class="bg-surface-elevated border border-surface-icon overflow-y-auto scrollbar-hide resize-none rounded-xl p-2 placeholder:text-txt-placeholder min-h-30"
-                ></textarea>
-              </div>
+
+              <p class="flex gap-2 text-txt-placeholder text-sm font-normal sm">
+                رمز عبور خود را فراموش کرده‌اید<span class="text-txt-cta"
+                  >ورود با کد یکبار مصرف</span
+                >
+              </p>
+
               <button
                 class="flex justify-center items-center btn-plans w-full p-2 mt-5"
               >
-                ارسال پیام
+                ورود
               </button>
-              <p class="text-sm font-normal text-txt-placeholder text-center">
-                اطلاعات شما نزد منوا محفوظ خواهد ماند و فقط برای پاسخگویی به شما
-                استفاده می‌شود
-              </p>
             </form>
           </div>
         </section>
