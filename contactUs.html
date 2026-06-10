@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg">
-    <div class="relative overflow-hidden">
+    <div class="relative">
       <div class="absolute inset-0 z-0 pointer-events-none">
         <img
           src="./assets/images/bg1.svg"
@@ -23,7 +23,7 @@
         />
       </div>
       <header
-        class="m-4 md:m-15 lg:mx-30 p-4 min-h flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px]"
+        class="m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px]"
       >
         <div class="flex gap-10 items-center">
           <img
@@ -32,11 +32,13 @@
             class="md:max-h-10"
           />
           <ul class="hidden md:flex md:flex-row gap-10">
-            <li class="navbar-items">قالب‌ها</li>
-            <li class="navbar-items">پلن‌ها</li>
-            <li class="navbar-items">خدمات</li>
-            <li class="navbar-items">بلاگ</li>
-            <li class="navbar-items">ارتباط با ما</li>
+            <li class="navbar-items"><a href="./template.html">قالب‌ها</a></li>
+            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+            <li class="navbar-items">
+              <a href="./contactUs.html">ارتباط با ما</a>
+            </li>
           </ul>
         </div>
         <div class="flex gap-4 items-center">
@@ -74,10 +76,10 @@
 
             <div class="flex w-full max-w-93 gap-4 justify-center">
               <button class="btn-signIn text-sm font-semibold w-full">
-                ارسال پیام
+                <a href="#send-question"> ارسال پیام </a>
               </button>
               <button class="btn-signIn text-sm font-semibold w-full">
-                مشاهده سوالات متداول
+                <a href="./faq.html"> مشاهده سوالات متداول </a>
               </button>
             </div>
           </div>
@@ -278,6 +280,7 @@
               </div>
             </div>
             <form
+              id="send-question"
               class="flex flex-col bg-surface border border-surface-icon rounded-[28px] px-4 py-5 gap-5 w-full"
             >
               <div class="flex flex-col md:flex-row w-full gap-2">
