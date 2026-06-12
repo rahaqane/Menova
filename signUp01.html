@@ -13,9 +13,12 @@
         class="p-4 lg:px-30 flex justify-between items-center bg-[#252C3F] backdrop-blur-md border-y border-y-white/16"
       >
         <img src="./assets/icons/logo.svg" alt="" srcset="" />
-        <button class="flex gap-2 items-center text-txt-cta">
+        <a
+          href="./login.html"
+          class="flex gap-2 items-center text-txt-cta cursor-pointer"
+        >
           بازگشت <img src="./assets/icons/left-prev.svg" alt="" srcset="" />
-        </button>
+        </a>
       </header>
       <main>
         <section>
@@ -38,7 +41,7 @@
                 </h3>
                 <p class="flex gap-2 text-txt-placeholder text-sm font-normal">
                   حساب کاربری دارید ؟<span class="text-txt-cta"
-                    ><a href="./forgot-password01.html">ورود به حساب </a></span
+                    ><a href="./login.html">ورود به حساب </a></span
                   >
                 </p>
               </div>
@@ -47,15 +50,12 @@
                   <p class="text-base font-medium text-txt-muted">
                     نام رستوران یا نام شما
                   </p>
-                  <div
-                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
-                  >
+                  <div class="form-input-container">
                     <img src="./assets/icons/username.svg" class="w-5 h-5" />
 
                     <input
                       type="text"
                       placeholder="نام خودرا وارد کنید..."
-                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
                       class="form-input"
                     />
                   </div>
@@ -66,26 +66,21 @@
                   <p class="text-base font-medium text-txt-muted">
                     شماره موبایل
                   </p>
-                  <div
-                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
-                  >
+                  <div class="form-input-container">
                     <img src="./assets/icons/email.svg" class="w-5 h-5" />
 
                     <input
                       type="text"
                       placeholder="مثلا ...۰۹۱۳"
-                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
                       class="form-input"
                     />
                   </div>
                 </div>
-                <div class="flex flex-col lg:flex-row lg:gap-3">
+                <div class="flex flex-col-reverse lg:flex-row lg:gap-3">
                   <div class="flex flex-col gap-2">
                     <p class="text-base font-medium text-txt-muted">رمز عبور</p>
 
-                    <div
-                      class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
-                    >
+                    <div class="form-input-container">
                       <img src="./assets/icons/lock.svg" class="w-5 h-5" />
 
                       <input
@@ -107,15 +102,13 @@
                       تکرار رمز عبور
                     </p>
 
-                    <div
-                      class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
-                    >
+                    <div class="form-input-container">
                       <img src="./assets/icons/lock.svg" class="w-5 h-5" />
 
                       <input
                         id="passwordInput"
                         type="password"
-                        placeholder="رمز عبور خود را وارد کنید..."
+                        placeholder="تکرار رمز عبور خود را وارد کنید..."
                         class="form-input"
                       />
 
@@ -135,11 +128,12 @@
                 <span class="text-txt-cta">پذیرش قوانین</span> و
                 <span class="text-txt-cta">شرایط استفاده</span> از خدمات است.
               </p>
-              <button
+              <a
+                href="./signUp02.html"
                 class="flex justify-center items-center btn-plans w-full p-2 mt-5"
               >
-                تأیید و ادامه
-              </button>
+                ثبت نام
+              </a>
               <p
                 class="hidden lg:flex gap-2 text-txt-placeholder text-sm font-normal"
               >
