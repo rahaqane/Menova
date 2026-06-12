@@ -210,7 +210,10 @@
     .social{
         @apply flex justify-center items-center p-2 rounded-full bg-surface border border-border-main
     }
+    .form-input{
+        @apply  w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-muted
 
+    }
     /* swiper home */
  .slider-wrapper {
   width: 100%;

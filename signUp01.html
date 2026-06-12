@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp01 page</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-surface">
+    <div class="relative overflow-hidden">
+      <div class="absolute inset-0 z-0 pointer-events-none"></div>
+      <header
+        class="p-4 lg:px-30 flex justify-between items-center bg-[#252C3F] backdrop-blur-md border-y border-y-white/16"
+      >
+        <img src="./assets/icons/logo.svg" alt="" srcset="" />
+        <button class="flex gap-2 items-center text-txt-cta">
+          بازگشت <img src="./assets/icons/left-prev.svg" alt="" srcset="" />
+        </button>
+      </header>
+      <main>
+        <section>
+          <div class="flex flex-col lg:flex-row gap-8 lg:gap-10">
+            <div class="relative lg:w-1/2 w-full shrink-0">
+              <div
+                class="lg:hidden absolute top-40 inset-0 bg-linear-to-t from-surface to-transparent"
+              ></div>
+              <img
+                src="./assets/images/s2.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <form
+              class="flex flex-col px-4 pb-5 md:py-5 gap-5 flex-1 lg:ml-30 lg:mt-30"
+            >
+              <div class="flex flex-col gap-2 w-full">
+                <h3 class="text-2xl font-bold lg:text-4xl text-txt-main">
+                  رستوران خود را دیجیتالی کنید
+                </h3>
+                <p class="flex gap-2 text-txt-placeholder text-sm font-normal">
+                  حساب کاربری دارید ؟<span class="text-txt-cta"
+                    ><a href="./forgot-password01.html">ورود به حساب </a></span
+                  >
+                </p>
+              </div>
+              <div class="flex flex-col w-full gap-2">
+                <div class="flex flex-col gap-2">
+                  <p class="text-base font-medium text-txt-muted">
+                    نام رستوران یا نام شما
+                  </p>
+                  <div
+                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
+                  >
+                    <img src="./assets/icons/username.svg" class="w-5 h-5" />
+
+                    <input
+                      type="text"
+                      placeholder="نام خودرا وارد کنید..."
+                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full gap-2">
+                <div class="flex flex-col gap-2">
+                  <p class="text-base font-medium text-txt-muted">
+                    شماره موبایل
+                  </p>
+                  <div
+                    class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
+                  >
+                    <img src="./assets/icons/email.svg" class="w-5 h-5" />
+
+                    <input
+                      type="text"
+                      placeholder="مثلا ...۰۹۱۳"
+                      class="w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-placeholder"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:gap-3">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-base font-medium text-txt-muted">رمز عبور</p>
+
+                    <div
+                      class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
+                    >
+                      <img src="./assets/icons/lock.svg" class="w-5 h-5" />
+
+                      <input
+                        id="passwordInput"
+                        type="password"
+                        placeholder="رمز عبور خود را وارد کنید..."
+                        class="form-input"
+                      />
+
+                      <img
+                        id="togglePassword"
+                        src="./assets/icons/eye.svg"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <p class="text-base font-medium text-txt-muted">
+                      تکرار رمز عبور
+                    </p>
+
+                    <div
+                      class="flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2"
+                    >
+                      <img src="./assets/icons/lock.svg" class="w-5 h-5" />
+
+                      <input
+                        id="passwordInput"
+                        type="password"
+                        placeholder="رمز عبور خود را وارد کنید..."
+                        class="form-input"
+                      />
+
+                      <img
+                        id="togglePassword"
+                        src="./assets/icons/eye.svg"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p
+                class="lg:hidden flex gap-2 text-txt-placeholder text-sm font-normal flex-wrap"
+              >
+                ثبت‌نام شما در منوا به معنی
+                <span class="text-txt-cta">پذیرش قوانین</span> و
+                <span class="text-txt-cta">شرایط استفاده</span> از خدمات است.
+              </p>
+              <button
+                class="flex justify-center items-center btn-plans w-full p-2 mt-5"
+              >
+                تأیید و ادامه
+              </button>
+              <p
+                class="hidden lg:flex gap-2 text-txt-placeholder text-sm font-normal"
+              >
+                ثبت‌نام شما در منوا به معنی
+                <span class="text-txt-cta">پذیرش قوانین</span> و
+                <span class="text-txt-cta">شرایط استفاده</span> از خدمات است.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
