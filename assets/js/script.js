@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // FAQ accordion
-  document.querySelectorAll(".dynamic-btn, .dynamicbtn, .dynamicarrow ").forEach((btn) => {
+  document.querySelectorAll(".dynamic-btn, .dynamicbtn, .dynamicarrow").forEach((btn) => {
     btn.addEventListener("click", () => {
       const card = btn.closest(".change-bg");
       const dynamicElements = card.querySelectorAll(".dynamic-p, .open-close-btn");
@@ -54,7 +54,7 @@ document.addEventListener("click", (e) => {
     }
   });
 });
-
+if (typeof Swiper !== "undefined") {
   // Swiper home
   const swiper = new Swiper(".mySwiper", { loop: true, grabCursor: true });
   const nextBtn = document.querySelector(".custom-next");
@@ -117,12 +117,22 @@ const articleSwiper = new Swiper(".articleSwiper", {
   },
 });
 
-
-
 window.addEventListener("load", () => {
   customersSwiper.update();
     plansForSaleSwiper.update();
 });
+}
+// show password
+const togglepassword = document.getElementById("togglePassword")
+const password = document.getElementById("passwordInput")
+if(togglepassword&&password){
+  togglepassword.addEventListener("click",()=>{
+  
+    const typeInput =password.getAttribute("type")==="password"?"text":"password";
+    password.setAttribute("type",typeInput)
+})
+}
+
 });
 
 // drop down

@@ -210,7 +210,18 @@
     .social{
         @apply flex justify-center items-center p-2 rounded-full bg-surface border border-border-main
     }
+    .form-input{
+        @apply  w-full bg-transparent outline-none placeholder:text-txt-placeholder text-txt-muted cursor-pointer
 
+    }
+    .form-input-container{
+        @apply flex items-center gap-2 bg-surface-elevated border border-surface-icon rounded-xl px-3 py-2 hover:border-[#9AA6C5CC] focus:border-[#9AA6C5CC] cursor-pointer
+
+    }
+    .receive-cod{
+        @apply bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder text-txt-placeholder w-full text-center hover:border-[#9AA6C5CC] focus:border-[#9AA6C5CC] cursor-pointer
+
+    }
     /* swiper home */
  .slider-wrapper {
   width: 100%;
