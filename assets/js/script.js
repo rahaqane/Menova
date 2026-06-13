@@ -92,6 +92,10 @@ const plansForSaleSwiper = new Swiper(".plansForSaleSwiper", {
   slidesPerView: "auto",
   spaceBetween: 16,
   centeredSlides: true,
+   navigation: {
+    nextEl: ".leftbtn",
+    prevEl: ".rightbtn",
+  },
   breakpoints: {
     1024: {
       centeredSlides: false,

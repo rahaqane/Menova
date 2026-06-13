@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>services page</title>
-  <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
 
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
@@ -24,8 +24,8 @@
           class="hidden sm:flex min-w-100.5 sm:w-full object-cover object-top"
         />
       </div>
-     <header
-        class="m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px]"
+       <header
+        class="relative m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px] z-50"
       >
         <div class="flex gap-10 items-center">
           <img
@@ -33,7 +33,7 @@
             alt="menoa logo"
             class="md:max-h-10"
           />
-          <ul class="hidden md:flex md:flex-row gap-10">
+          <ul id="desktop-menu" class="hidden md:flex md:flex-row gap-10">
             <li class="navbar-items"><a href="./template.html">قالب‌ها</a></li>
             <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
             <li class="navbar-items"><a href="./services.html">خدمات</a></li>
@@ -48,13 +48,26 @@
             type="button"
             class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
           >
-            ورود | ثبت نام
+            <a href="./login.html"> ورود | ثبت نام </a>
           </button>
           <img
+            id="menu-toggle-icon"
             src="./assets/icons/navbarIcon.svg"
             alt="navBar"
-            class="w-10 h-10 md:hidden"
+            class="w-10 h-10 md:hidden cursor-pointer"
           />
+        </div>
+
+        <div id="dropdown-menu" class="mobile-dropdown">
+          <ul class="mobile-dropdown-list">
+            <li class="navbar-items"><a href="./template.html">قالب‌ها</a></li>
+            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+            <li class="navbar-items">
+              <a href="./contactUs.html">ارتباط با ما</a>
+            </li>
+          </ul>
         </div>
       </header>
       <main class="m-4 md:m-15 lg:mx-30">
@@ -628,6 +641,168 @@
             </div>
           </div>
         </section>
+        <section
+          class="relative w-screen left-1/2 right-1/2 -mx-[50vw] mt-20 overflow-hidden bg-surface-main lg:py-40"
+        >
+          <div
+            class="absolute inset-0 z-0 pointer-events-none flex items-center justify-center -mx-30"
+          >
+            <img
+              src="./assets/images/bg2.svg"
+              class="hidden lg:block w-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          >
+            <div class="flex flex-col gap-10">
+              <h3 class="text-white text-2xl font-bold lg:text-4xl">
+                منوا چگونه کار می‌کند ؟
+              </h3>
+
+              <ul class="flex flex-col gap-6 lg:gap-12">
+                <li class="flex items-start gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center gap-4 mt-1">
+                    <div
+                      class="flex justify-center items-center px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                    >
+                      1
+                    </div>
+                    <div
+                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col items-start gap-2">
+                    <h3
+                      class="text-lg md:text-xl md:font-bold font-semibold text-txt-muted"
+                    >
+                      ثبت‌نام و ساخت منو
+                    </h3>
+                    <p
+                      class="text-sm font-normal lg:text-[16px] text-txt-caption leading-relaxed"
+                    >
+                      در کمتر از چند دقیقه منوی دیجیتال خود را ایجاد کنید و
+                      آیتم‌ها را اضافه کنید.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center gap-4 mt-1">
+                    <div
+                      class="flex justify-center items-center px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                    >
+                      2
+                    </div>
+                    <div
+                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col items-start gap-2">
+                    <h3
+                      class="text-lg md:text-xl md:font-bold font-semibold text-txt-muted"
+                    >
+                      شخصی‌سازی ظاهر
+                    </h3>
+                    <p
+                      class="text-sm font-normal lg:text-[16px] text-txt-caption leading-relaxed"
+                    >
+                      رنگ‌ها، دسته‌بندی‌ها و تصاویر را مطابق برند خود تنظیم
+                      کنید.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center gap-4 mt-1">
+                    <div
+                      class="flex justify-center items-center px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                    >
+                      3
+                    </div>
+                    <div
+                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col items-start gap-2">
+                    <h3
+                      class="text-lg md:text-xl md:font-bold font-semibold text-txt-muted"
+                    >
+                      اشتراک‌گذاری با مشتری
+                    </h3>
+                    <p
+                      class="text-sm font-normal lg:text-[16px] text-txt-caption leading-relaxed"
+                    >
+                      لینک یا QR منوی خود را به‌راحتی در اختیار مشتریان قرار
+                      دهید.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center gap-4 mt-1">
+                    <div
+                      class="flex justify-center items-center px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                    >
+                      4
+                    </div>
+                    <div
+                      class="sm:h-2 sm:w-2 h-1.5 w-1.5 rounded-full bg-secondray"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col items-start gap-2">
+                    <h3
+                      class="text-lg md:text-xl md:font-bold font-semibold text-txt-muted"
+                    >
+                      ثبت سفارش و مدیریت
+                    </h3>
+                    <p
+                      class="text-sm font-normal lg:text-[16px] text-txt-caption leading-relaxed"
+                    >
+                      سفارش‌ها را دریافت کنید، پرداخت‌ها را مدیریت و همه‌چیز را
+                      آنلاین کنترل کنید.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center gap-4 mt-1">
+                    <div
+                      class="flex justify-center items-center px-4 py-2 text-border-main border-3 border-border-main rounded-full bg-surface-icon max-w-max"
+                    >
+                      5
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-start gap-2">
+                    <h3
+                      class="text-lg md:text-xl md:font-bold font-semibold text-txt-muted"
+                    >
+                      همراهی و پشتیبانی در تمام مسیر
+                    </h3>
+                    <p
+                      class="text-sm font-normal lg:text-[16px] text-txt-caption leading-relaxed"
+                    >
+                      از راه‌اندازی اولیه تا مدیریت روزانه منو، تیم پشتیبانی
+                      منوا در کنار شماست
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="lg:hidden flex justify-center mt-10 w-full relative z-20"
+            >
+              <img
+                src="./assets/images/bg2-mobile.svg"
+                alt="نمای موبایل منوا"
+                class="w-full object-cover -mx-4 md-mx-15"
+              />
+            </div>
+          </div>
+        </section>
         <section id="plans-details">
           <div class="flex flex-col justify-center items-center w-full mt-30">
             <h3 class="text-2xl font-bold text-txt-main lg:text-4xl mb-8">
@@ -699,62 +874,64 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-              class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
-            >
-              <img
-                src="./assets/images/farme146.webp"
-                alt=""
-                class="rounded-xl"
-              />
-              <div class="flex justify-between items-start gap-3">
-                <div class="flex flex-col gap-2 min-w-0">
-                  <h3 class="text-txt-main text-xl font-bold truncate">
-                    قالب پاپ استریت
-                  </h3>
-
-                  <p class="text-txt-caption text-xs font-normal break-words">
-                    یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
-                  </p>
-                </div>
-
-                <div class="shop-fillter2 shrink-0">مناسب رستوران</div>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex justify-center items-center">
-                  <img src="./assets/icons/cup.svg" alt="" srcset="" />
-                  <p
-                    class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg whitespace-nowrap "
+                    class="flex flex-col p-2.5 bg-surface-elevated rounded-[20px] gap-4 lg:gap-5 w-full"
                   >
-                    پلن پیش فرض:
-                  </p>
-                </div>
-                <div class="flex justify-center items-center">
-                  <svg
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
-                      fill="#C3C3C3"
+                    <img
+                      src="./assets/images/farme146.webp"
+                      alt=""
+                      class="rounded-xl"
                     />
-                    <path
-                      d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
-                      fill="#C3C3C3"
-                      stroke="#C3C3C3"
-                    />
-                  </svg>
-                  <p
-                    class="text-base text-[#C3C3C3] font-medium py-2 px-4 rounded-lg w-full"
-                  >
-                    پلن نقره ای
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="flex justify-between items-start gap-3">
+                      <div class="flex flex-col gap-2 min-w-0">
+                        <h3 class="text-txt-main text-xl font-bold truncate">
+                          قالب پاپ استریت
+                        </h3>
+
+                        <p
+                          class="text-txt-caption text-xs font-normal break-words"
+                        >
+                          یک قالب با سبکی خاص برای خاص تر کردن رستوران شما
+                        </p>
+                      </div>
+
+                      <div class="shop-fillter2 shrink-0">مناسب رستوران</div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex justify-center items-center">
+                        <img src="./assets/icons/cup.svg" alt="" srcset="" />
+                        <p
+                          class="text-base text-txt-caption font-medium py-2 px-4 rounded-lg whitespace-nowrap"
+                        >
+                          پلن پیش فرض:
+                        </p>
+                      </div>
+                      <div class="flex justify-center items-center">
+                        <svg
+                          width="26"
+                          height="26"
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.21834 17.3333C6.33751 16.8025 6.12084 16.0441 5.74168 15.665L3.10918 13.0325C2.28584 12.2091 1.96084 11.3316 2.19918 10.5733C2.44834 9.81496 3.21751 9.29496 4.36584 9.09996L7.74584 8.53663C8.23334 8.44996 8.82918 8.01663 9.05668 7.57246L10.92 3.83496C11.4617 2.76246 12.1983 2.16663 13 2.16663C13.8017 2.16663 14.5383 2.76246 15.08 3.83496L16.9433 7.57246C17.0842 7.85413 17.3767 8.12496 17.6908 8.30913L6.02334 19.9766C5.87168 20.1283 5.61168 19.9875 5.65501 19.7708L6.21834 17.3333Z"
+                            fill="#C3C3C3"
+                          />
+                          <path
+                            d="M20.4435 9.4082L20.4464 9.40918L21.5392 9.5918V9.59277C22.5345 9.76179 23.0785 10.1686 23.2794 10.6357L23.3146 10.7295C23.4696 11.2329 23.2835 11.9216 22.5265 12.6787L22.5255 12.6797L19.9044 15.3115C19.6356 15.5804 19.4488 15.9465 19.3448 16.3086C19.2418 16.6676 19.2056 17.075 19.2941 17.4443V17.4453L20.0421 20.7061V20.707C20.3447 22.0114 20.0968 22.7486 19.6818 23.0498C19.5078 23.1743 19.2897 23.247 19.0021 23.2471C18.5689 23.2471 18.0065 23.0825 17.338 22.6875L14.1652 20.8037L14.1632 20.8018L14.0304 20.7314C13.713 20.5795 13.3453 20.5137 13.0001 20.5137C12.6056 20.5137 12.1818 20.5995 11.837 20.8018L11.8351 20.8037L8.66321 22.6865C7.57534 23.3236 6.82465 23.3505 6.40051 23.1045L6.32043 23.0518C6.22719 22.9828 6.14744 22.8983 6.07825 22.7949L18.9982 9.87598C19.3842 9.49011 19.9255 9.31776 20.4435 9.4082Z"
+                            fill="#C3C3C3"
+                            stroke="#C3C3C3"
+                          />
+                        </svg>
+                        <p
+                          class="text-base text-[#C3C3C3] font-medium py-2 px-4 rounded-lg w-full"
+                        >
+                          پلن نقره ای
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
@@ -820,9 +997,23 @@
                 </div>
               </div>
             </div>
+            <div class="flex gap-6 justify-center my-5">
+              <button
+                class="leftbtn lg:hidden bg-txt-cta/40 hover:bg-txt-muted p-4 rounded-full"
+              >
+                <img src="./assets/icons/right-next.svg" alt="" srcset="" />
+              </button>
+              <button
+                class="rightbtn lg:hidden bg-txt-cta/40 hover:bg-txt-muted p-4 rounded-full"
+              >
+                <img src="./assets/icons/left-prev.svg" alt="" srcset="" />
+              </button>
+            </div>
+            <a href="#" class="text-txt-cta font-semibold text-[16px]"
+              >مشاهده همه قالب ها</a
+            >
           </div>
         </section>
-        
       </main>
     </div>
     <footer class="relative pt-10 min-h-[563px] max-h-[1311px]">
@@ -1292,5 +1483,6 @@
     </footer>
 
     <script src="./assets/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script></body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
