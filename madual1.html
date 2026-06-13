@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>madual1</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-bg max-h-max">
+    <div class="relative">
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img
+          src="./assets/images/maincheckoutBG.svg"
+          alt=""
+          srcset=""
+          class="hidden sm:flex object-cover w-full"
+        />
+      </div>
+
+      <main class="mx-5 lg:mx-30">
+        <div class="flex flex-col">
+          <div class="flex justify-between mt-8 lg:mt-15">
+            <div class="flex flex-col text-center gap-2 lg:gap-3">
+              <h1
+                class="font-bold text-xl lg:font-semibold lg:text-4xl text-txt-main mt-10 lg:mt-0 whitespace-nowrap"
+              >
+                امکانات پیشرفته برای توسعه رستوران شما
+              </h1>
+              <p
+                class="font-normal text-xs lg:text-base text-txt-placeholder max-w-190"
+              >
+                با افزودن ماژول‌های تخصصی، امکانات بیشتری برای مدیریت سفارش‌ها،
+                ارتباط با مشتریان و افزایش فروش در اختیار خواهید داشت.
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <p
+                class="hidden lg:flex text-txt-caption font-semibold text-[16px]"
+              >
+                بازگشت
+              </p>
+              <img src="assets/icons/arrow-left.svg" class="h-6 w-6" />
+            </div>
+          </div>
+          <div
+            class="-mx-5 lg:-mx-30 border border-white/24 my-6 lg:my-10"
+          ></div>
+          <h2 class="text-2xl font-semibold text-txt-main my-4">
+            لیست ماژول ها
+          </h2>
+
+          <div
+            class="flex gap-4 overflow-x-auto scrollbar-hide cursor-pointer mb-10 sm:mb-25"
+          >
+            <div
+              class="flex flex-col justify-between p-2 bg-surface border border-surface-icon hover:border-txt-cta focus:border-txt-cta rounded-2xl gap-4 lg:gap-5 min-w-70"
+            >
+              <img src="./assets/images/image3.png" class="rounded-lg" />
+              <h3 class="text-txt-main text-lg font-semibold lg:text-xl">
+                سیستم رزرو آنلاین میز
+              </h3>
+              <p class="text-txt-placeholder text-xs font-normal">
+                مشتریان می‌توانند قبل از مراجعه، میز خود را رزرو کنند...
+              </p>
+              <div class="border border-white/12"></div>
+              <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+                <p class="text-sm font-semibold text-txt-muted">
+                  ۱۵۰,۰۰۰ تومان / ماه
+                </p>
+                <button
+                  class="btn-signIn"
+                  data-id="mod1"
+                  data-title="سیستم رزرو آنلاین میز"
+                  data-price="150000"
+                  data-icon="./assets/icons/cl2.svg"
+                  onclick="toggleModule(this)"
+                >
+                  افزودن به سفارش
+                </button>
+              </div>
+            </div>
+
+            <!-- ماژول ۲ -->
+            <div
+              class="flex flex-col justify-between p-2 bg-surface border border-surface-icon hover:border-txt-cta focus:border-txt-cta rounded-2xl gap-4 lg:gap-5 min-w-70"
+            >
+              <img src="./assets/images/image1.png" class="rounded-lg" />
+              <h3 class="text-txt-main text-lg font-semibold lg:text-xl">
+                بسته پیامک تبلیغاتی
+              </h3>
+              <p class="text-txt-placeholder text-xs font-normal">
+                ارسال پیامک اطلاع‌رسانی و تبلیغاتی به مشتریان...
+              </p>
+              <div class="border border-white/12"></div>
+              <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+                <p class="text-sm font-semibold text-txt-muted">
+                  ۵۰,۰۰۰ تومان / ۲۰۰۰ پیامک
+                </p>
+                <button
+                  class="btn-signIn"
+                  data-id="mod2"
+                  data-title="بسته پیامک تبلیغاتی"
+                  data-price="50000"
+                  data-icon="./assets/icons/cl2.svg"
+                  onclick="toggleModule(this)"
+                >
+                  افزودن به سفارش
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between p-2 bg-surface border border-surface-icon hover:border-txt-cta focus:border-txt-cta rounded-2xl gap-4 lg:gap-5 min-w-70"
+            >
+              <img src="./assets/images/image2.png" class="rounded-lg" />
+              <h3 class="text-txt-main text-lg font-semibold lg:text-xl">
+                گزارشات پیشرفته فروش
+              </h3>
+              <p class="text-txt-placeholder text-xs font-normal">
+                تحلیل کامل فروش، پرفروش‌ترین آیتم‌ها...
+              </p>
+              <div class="border border-white/12"></div>
+              <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+                <p class="text-sm font-semibold text-txt-muted">
+                  ۱۲۰,۰۰۰ تومان / ماه
+                </p>
+                <button
+                  class="btn-signIn"
+                  data-id="mod3"
+                  data-title="گزارشات پیشرفته فروش"
+                  data-price="120000"
+                  data-icon="./assets/icons/cl2.svg"
+                  onclick="toggleModule(this)"
+                >
+                  افزودن به سفارش
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="summary-panel"
+            class="hidden flex-col-reverse sm:flex-row justify-between rounded-t-[20px] lg:rounded-[20px] bg-surface-elevated border border-surface-icon p-5 gap-4 lg:gap-8 lg:mb-4 transition-all duration-300"
+          >
+            <!-- بخش سمت راست (عنوان و بج‌های انتخاب شده) -->
+            <div class="flex flex-col w-full sm:w-auto flex-1 gap-4">
+              <div class="flex justify-between items-center">
+                <h2 class="lg:text-lg text-base font-semibold text-txt-main">
+                  ماژول‌های انتخاب شده
+                </h2>
+                <!-- دکمه باز و بسته کردن در موبایل (دارای آیدی و رویداد کلیک) -->
+                <img
+                  id="mobile-toggle-icon"
+                  src="./assets/icons/down.svg"
+                  class="h-6 w-6 sm:hidden cursor-pointer transition-transform duration-300"
+                  onclick="toggleMobileBadges()"
+                />
+              </div>
+
+              <!-- کانتینر بج‌ها: در موبایل پیش‌فرض مخفی (hidden) و در دسکتاپ نمایش (sm:flex) داده می‌شود -->
+              <div
+                id="badges-container"
+                class="hidden sm:flex flex-col sm:flex-row flex-wrap gap-2"
+              >
+                <!-- محتوای این بخش توسط جاوااسکریپت پر می‌شود -->
+              </div>
+            </div>
+
+            <!-- بخش سمت چپ (قیمت کل و دکمه تایید) -->
+            <div class="flex flex-col-reverse sm:flex-row w-full sm:w-auto">
+              <div class="border border-white/24 my-4 sm:my-0 sm:mx-4"></div>
+              <div class="flex flex-col justify-between gap-4 w-full sm:w-auto">
+                <div class="flex justify-between gap-8">
+                  <p
+                    class="text-base font-medium text-txt-main whitespace-nowrap"
+                  >
+                    جمع ماژول‌ها:
+                  </p>
+                  <p
+                    id="total-price"
+                    class="text-xl font-semibold text-txt-cta whitespace-nowrap"
+                  >
+                    ۰ تومان
+                  </p>
+                </div>
+                <button class="btn-signIn w-full">
+                  تایید و بازگشت به سفارش
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -67,7 +67,7 @@ const customersSwiper = new Swiper(".customersSwiper", {
   grabCursor: true,
   slidesPerView: "auto",
   spaceBetween: 16,
-    centeredSlides: true, // پیشفرض موبایل
+    centeredSlides: true, 
     rtl: true,
  navigation: {
     nextEl: ".leftbtn",
@@ -85,7 +85,7 @@ const customersSwiper = new Swiper(".customersSwiper", {
 });
 
 
-// plansForSaleSwiper
+
 const plansForSaleSwiper = new Swiper(".plansForSaleSwiper", {
   loop: true,
   grabCursor: true,
@@ -162,5 +162,95 @@ if (toggle && menu) {
   });
 }
 
+
 });
+let selectedModules = [];
+
+function toggleModule(btn) {
+  const id = btn.getAttribute('data-id');
+  const title = btn.getAttribute('data-title');
+  const price = parseInt(btn.getAttribute('data-price'));
+  const icon = btn.getAttribute('data-icon');
+
+  const existingIndex = selectedModules.findIndex(item => item.id === id);
+
+  if (existingIndex > -1) {
+    removeModule(id);
+  } else {
+    selectedModules.push({ id, title, price, icon, btnElement: btn });
+    
+    btn.className = "btn-done gap-2";
+    btn.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z" fill="#EBD3B0"/>
+      </svg>
+      افزوده شد
+    `;
+    updateSummaryPanel();
+  }
+}
+
+function removeModule(id) {
+  const moduleToFind = selectedModules.find(item => item.id === id);
+  if (moduleToFind) {
+    moduleToFind.btnElement.className = "btn-signIn";
+    moduleToFind.btnElement.innerHTML = "افزودن به سفارش";
+    selectedModules = selectedModules.filter(item => item.id !== id);
+    updateSummaryPanel();
+  }
+}
+
+function toggleMobileBadges() {
+  const badgesContainer = document.getElementById('badges-container');
+  const toggleIcon = document.getElementById('mobile-toggle-icon');
+
+  if (badgesContainer.classList.contains('hidden')) {
+    badgesContainer.classList.remove('hidden');
+    badgesContainer.classList.add('flex');
+    toggleIcon.style.transform = 'rotate(180deg)'; 
+  } else {
+    badgesContainer.classList.add('hidden');
+    badgesContainer.classList.remove('flex');
+    toggleIcon.style.transform = 'rotate(0deg)'; 
+  }
+}
+
+function updateSummaryPanel() {
+  const summaryPanel = document.getElementById('summary-panel');
+  const badgesContainer = document.getElementById('badges-container');
+  const priceElement = document.getElementById('total-price');
+  const toggleIcon = document.getElementById('mobile-toggle-icon');
+
+  if (selectedModules.length === 0) {
+    summaryPanel.classList.add('hidden');
+    summaryPanel.classList.remove('flex');
+    
+    badgesContainer.classList.add('hidden');
+    badgesContainer.classList.remove('flex');
+    toggleIcon.style.transform = 'rotate(0deg)';
+    return;
+  }
+
+  summaryPanel.classList.remove('hidden');
+  summaryPanel.classList.add('flex');
+
+  badgesContainer.innerHTML = '';
+  let totalPrice = 0;
+
+  selectedModules.forEach(module => {
+    totalPrice += module.price;
+   
+    const badgeHTML = `
+      <div class="border border-border-main rounded-xl p-2 flex gap-2 max-w-max items-center">
+        <img src="${module.icon}" class="h-8 w-8" />
+        <p class="text-base font-medium text-txt-caption">${module.title}</p>
+        <img src="./assets/icons/cross.svg" class="h-4 w-4 cursor-pointer" onclick="removeModule('${module.id}')" />
+      </div>
+    `;
+    badgesContainer.insertAdjacentHTML('beforeend', badgeHTML);
+  });
+
+  const persianPrice = totalPrice.toLocaleString('fa-IR');
+  priceElement.innerText = `${persianPrice} تومان`;
+}
 
