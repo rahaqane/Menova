@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main checkout</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-bg max-h-max">
+    <div class="relative">
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img
+          src="./assets/images/maincheckoutBG.svg"
+          alt=""
+          srcset=""
+          class="hidden sm:flex object-cover w-full"
+        />
+      </div>
+
+      <main class="mx-5 lg:mx-30">
+        <div class="flex flex-col">
+          <div class="flex justify-between mt-8 lg:mt-15">
+            <div></div>
+            <div class="flex flex-col text-center gap-2 lg:gap-3">
+              <h1
+                class="font-bold text-2xl lg:font-semibold lg:text-4xl text-txt-main mt-10 lg:mt-0"
+              >
+                خلاصه سفارش
+              </h1>
+              <p class="font-normal text-sm lg:text-base text-txt-placeholder">
+                قبل از پرداخت نهایی خلاصه ای از سفارش خود را مشاهده و تایید کنید
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <p
+                class="hidden lg:flex text-txt-caption font-semibold text-[16px]"
+              >
+                بازگشت
+              </p>
+              <img src="assets/icons/arrow-left.svg" class="h-6 w-6" />
+            </div>
+          </div>
+          <div
+            class="-mx-5 lg:-mx-30 border border-white/24 my-6 lg:my-10"
+          ></div>
+          <div class="flex flex-col lg:flex-row gap-15 lg:gap-8">
+            <div class="flex flex-col gap-4 w-full">
+              <div class="flex justify-between">
+                <p class="text-lg font-semibold lg:font-bold text-txt-main">
+                  پلن انتخاب‌شده شما
+                </p>
+                <p class="text-txt-cta font-semibold text-[16px]">
+                  تغییر پلن انتخابی
+                </p>
+              </div>
+              <div
+                class="flex flex-col p-2.5 lg:p-3 bg-surface rounded-2xl border border-surface-icon gap-4 w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <div class="flex">
+                    <img src="./assets/icons/crown.svg" alt="" srcset="" />
+                    <p
+                      class="text-lg text-accent-gold font-bold lg:font-semibold lg:text-xl py-2 px-4 rounded-lg w-full"
+                    >
+                      پلن طلایی
+                    </p>
+                  </div>
+                  <div
+                    class="p-2 text-xs font-medium lg:text-sm bg-[#B3BCD42E] text-txt-caption rounded-lg whitespace-nowrap"
+                  >
+                    دوره سالانه
+                  </div>
+                </div>
+                <p
+                  class="font-normal text-sm lg:text-base text-txt-placeholder"
+                >
+                  دسترسی کامل به تمامی امکانات حرفه‌ای مدیریت منو، سفارش آنلاین
+                  و گزارشات پیشرفته
+                </p>
+              </div>
+              <div class="border border-white/24 my-5"></div>
+              <div class="flex justify-between pb-4">
+                <p class="text-base font-medium text-txt-main">
+                  کد تخفیف دارید؟
+                </p>
+                <img src="./assets/icons/down.svg" alt="" srcset="" />
+              </div>
+              <div
+                class="flex flex-col gap-4 rounded-2xl p-2 bg-white/10 lg:p-4"
+              >
+                <div class="flex gap-2">
+                  <img src="./assets/icons/boxes.svg" alt="" srcset="" />
+                  <p class="text-base font-semibold text-txt-muted">
+                    امکانات پیشرفته‌تری می‌خواهید؟
+                  </p>
+                </div>
+                <p class="text-sm font-normal text-txt-caption">
+                  ماژول‌های تخصصی مانند افزایش پیامک، گزارشات حرفه‌ای و… را به
+                  اشتراک خود اضافه کنید
+                </p>
+                <button
+                  class="text-sm font-semibold py-2 px-4 w-full justify-center bg-btn-secondary text-white rounded-lg lg:w-46"
+                >
+                  مشاهده و افزودن ماژول‌ها
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col bg-surface-elevated border border-btn-secondary rounded-[20px] p-4 w-full lg:max-w-105"
+            >
+              <p
+                class="text-xl font-bold lg:text-2xl my-6 text-txt-main text-center"
+              >
+                خلاصه پرداخت
+              </p>
+              <div class="flex flex-col w-full h-full justify-between">
+                <div
+                  class="flex py-4 border-b border-b-surface-icon justify-between"
+                >
+                  <p
+                    class="font-medium text-base text-txt-caption whitespace-nowrap"
+                  >
+                    اشتراک پلن طلایی:
+                  </p>
+                  <p
+                    class="font-medium text-base text-txt-main whitespace-nowrap"
+                  >
+                    ۱,۹۸۰,۰۰۰ تومان
+                  </p>
+                </div>
+                <div
+                  class="flex py-4 border-b border-b-surface-icon justify-between"
+                >
+                  <p
+                    class="font-medium text-base text-txt-caption whitespace-nowrap"
+                  >
+                    ماژول‌ها:
+                  </p>
+                  <p
+                    class="font-medium text-base text-txt-main whitespace-nowrap"
+                  >
+                    ۰ تومان
+                  </p>
+                </div>
+                <div
+                  class="flex py-4 border-b-2 border-b-surface-icon justify-between"
+                >
+                  <p
+                    class="font-medium text-base text-txt-caption whitespace-nowrap"
+                  >
+                    تخفیف:
+                  </p>
+                  <p
+                    class="font-medium text-base text-txt-main whitespace-nowrap"
+                  >
+                    ۰ تومان
+                  </p>
+                </div>
+                <div class="flex py-4 justify-between">
+                  <p
+                    class="font-medium text-base text-txt-caption whitespace-nowrap"
+                  >
+                    جمع کل
+                  </p>
+                  <p
+                    class="font-semibold text-xl text-txt-cta whitespace-nowrap"
+                  >
+                    ۱,۹۸۰,۰۰۰ تومان
+                  </p>
+                </div>
+                <button class="btn-signIn hidden lg:flex mt-10">
+                  ادامه به پرداخت
+                </button>
+              </div>
+            </div>
+            <div
+              class="lg:hidden -mx-4 p-4 rounded-t-[20px] bg-surface-elevated border border-surface-icon max-h-max"
+            >
+              <button class="btn-signIn w-full">ادامه به پرداخت</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
