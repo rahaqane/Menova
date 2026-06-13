@@ -222,46 +222,63 @@
         @apply bg-surface-elevated border border-surface-icon outline-none focus:outline-none rounded-xl p-2 placeholder:text-txt-placeholder text-txt-placeholder w-full text-center hover:border-[#9AA6C5CC] focus:border-[#9AA6C5CC] cursor-pointer
 
     }
+   
+
+  /* منوی موبایل */
+/* ... بقیه کدها ... */
+
+.mobile-dropdown {
+    
+    @apply absolute top-full left-0 right-0 bg-[#2c3240] shadow-xl rounded-b-[20px] 
+           flex-col gap-4 p-6 mt-2 border border-white/16 z-[999] pointer-events-auto hidden;
+}
+
+.mobile-dropdown.active {
+    @apply flex;
+}
+
+.mobile-dropdown a {
+    @apply block w-full py-2; 
+}
+
+
+
     /* swiper home */
  .slider-wrapper {
   width: 100%;
-  /* حذف max-width سخت‌گیرانه یا افزایش آن */
   max-width: 800px; 
   height: auto;
   position: relative;
-  /* جلوگیری از کوچک شدن بیش از حد اسلایدر */
   min-width: 320px; 
 }
 
 .swiper-custom {
   width: 100%;
   border-radius: 16px;
-  /* اطمینان از اینکه عکس از کادر بیرون نمی‌زند */
   overflow: visible; 
 }
 
 .swiper-slide img {
   width: 100%;
   height: auto;
-  /* تغییر از cover به contain یا حذف آن برای نمایش کامل موبایل */
   object-fit: contain; 
   display: block;
 }
 .commentsSwiper {
-  overflow: visible !important; /* برای دیده شدن اسلایدهای کناری */
-  padding-bottom: 20px; /* فضای خالی برای سایه یا افکت‌ها */
+  overflow: visible !important; 
+  padding-bottom: 20px; 
 }
 
 .commentsSwiper .swiper-slide {
-  width: auto; /* بسیار مهم برای slidesPerView: "auto" */
+  width: auto; 
   transition: transform 0.3s ease;
 }
 .plansForSaleSwiper {
-  overflow: hidden; /* یا visible اگه می‌خوای کارت‌های کنار دیده بشن */
+  overflow: hidden; 
 }
 
 .plansForSaleSwiper .swiper-slide {
-  width: 280px; /* عرض ثابت برای موبایل با slidesPerView: "auto" */
+  width: 280px; 
 }
 .articleSwiper .swiper-wrapper {
   align-items: stretch;
@@ -269,7 +286,7 @@
 
 .articleSwiper .swiper-slide {
   height: auto;
-  display: flex; /* ← این خط مهمه */
+  display: flex; 
 }
 
 @media (min-width: 1024px) {

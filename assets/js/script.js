@@ -62,16 +62,20 @@ if (typeof Swiper !== "undefined") {
 
   // Swiper customers
 const customersSwiper = new Swiper(".customersSwiper", {
+  direction: 'horizontal',
   loop: true,
   grabCursor: true,
   slidesPerView: "auto",
   spaceBetween: 16,
     centeredSlides: true, // پیشفرض موبایل
-
+    rtl: true,
+ navigation: {
+    nextEl: ".leftbtn",
+    prevEl: ".rightbtn",
+  },
   breakpoints: {
     1024: { // lg
       centeredSlides: false,
-      slidesPerView: 3,   // یا 4 هرچقدر میخوای
     },
   },
 
@@ -132,7 +136,27 @@ if(togglepassword&&password){
     password.setAttribute("type",typeInput)
 })
 }
+// navbar
+const toggle = document.getElementById("menu-toggle-icon");
+const menu = document.getElementById("dropdown-menu");
+
+if (toggle && menu) {
+
+  menu.addEventListener("click", (e)=>{
+    e.stopPropagation();
+  });
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.toggle("active");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.classList.remove("active");
+    }
+  });
+}
 
 });
 
-// drop down
