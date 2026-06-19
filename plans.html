@@ -22,53 +22,61 @@
           class="hidden sm:flex min-w-[402px] sm:w-full object-cover object-top"
         />
       </div>
-      <header
-        class="relative m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px] z-50"
-      >
-        <div class="flex gap-10 items-center">
-          <img
-            src="./assets/icons/logo.svg"
-            alt="menoa logo"
-            class="md:max-h-10"
-          />
-          <ul id="desktop-menu" class="hidden md:flex md:flex-row gap-10">
-            <li class="navbar-items"><a href="./template.html">قالب‌ها</a></li>
-            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
-            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
-            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
-            <li class="navbar-items">
-              <a href="./contactUs.html">ارتباط با ما</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex gap-4 items-center">
-          <button
-            type="button"
-            class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
-          >
-            <a href="./login.html"> ورود | ثبت نام </a>
-          </button>
-          <img
-            id="menu-toggle-icon"
-            src="./assets/icons/navbarIcon.svg"
-            alt="navBar"
-            class="w-10 h-10 md:hidden cursor-pointer"
-          />
-        </div>
+      <div class="fixed top-0 left-0 w-full z-50 flex justify-center">
+        <header
+          class="relative m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px] z-50 w-full"
+        >
+          <div class="flex gap-10 items-center">
+            <img
+              src="./assets/icons/logo.svg"
+              alt="menoa logo"
+              class="md:max-h-10"
+            />
+            <ul id="desktop-menu" class="hidden md:flex md:flex-row gap-10">
+              <li class="navbar-items">
+                <a href="./template.html">قالب‌ها</a>
+              </li>
+              <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+              <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+              <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+              <li class="navbar-items">
+                <a href="./contactUs.html">ارتباط با ما</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-4 items-center">
+            <button
+              type="button"
+              class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
+            >
+              <a href="./login.html"> ورود | ثبت نام </a>
+            </button>
+            <img
+              id="menu-toggle-icon"
+              src="./assets/icons/navbarIcon.svg"
+              alt="navBar"
+              class="w-10 h-10 md:hidden cursor-pointer"
+            />
+          </div>
 
-        <div id="dropdown-menu" class="mobile-dropdown">
-          <ul class="mobile-dropdown-list">
-            <li class="navbar-items"><a href="./template.html">قالب‌ها</a></li>
-            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
-            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
-            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
-            <li class="navbar-items">
-              <a href="./contactUs.html">ارتباط با ما</a>
-            </li>
-          </ul>
-        </div>
-      </header>
+          <div id="dropdown-menu" class="mobile-dropdown">
+            <ul class="mobile-dropdown-list">
+              <li class="navbar-items">
+                <a href="./template.html">قالب‌ها</a>
+              </li>
+              <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+              <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+              <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+              <li class="navbar-items">
+                <a href="./contactUs.html">ارتباط با ما</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
       <main class="m-4 md:m-15 lg:mx-30">
+        <div class="md:my-50 my-30"></div>
+
         <section
           id="hero"
           class="flex flex-col justify-center items-center gap-3 my-20"
