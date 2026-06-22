@@ -7,1331 +7,1372 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
   <body class="bg-bg">
-    <div class="fixed top-0 left-0 w-full z-50 flex justify-center">
-      <header
-        class="relative m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px] z-50 w-full"
-      >
-        <div class="flex gap-10 items-center">
-          <img
-            src="./assets/icons/logo.svg"
-            alt="menoa logo"
-            class="md:max-h-10"
-          />
-          <ul id="desktop-menu" class="hidden md:flex md:flex-row gap-10">
-            <li class="navbar-items">
-              <a href="./template.html">قالب‌ها</a>
-            </li>
-            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
-            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
-            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
-            <li class="navbar-items">
-              <a href="./contactUs.html">ارتباط با ما</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex gap-4 items-center">
-          <button
-            type="button"
-            class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
-          >
-            <a href="./login.html"> ورود | ثبت نام </a>
-          </button>
-          <img
-            id="menu-toggle-icon"
-            src="./assets/icons/navbarIcon.svg"
-            alt="navBar"
-            class="w-10 h-10 md:hidden cursor-pointer"
-          />
-        </div>
-
-        <div id="dropdown-menu" class="mobile-dropdown">
-          <ul class="mobile-dropdown-list">
-            <li class="navbar-items">
-              <a href="./template.html">قالب‌ها</a>
-            </li>
-            <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
-            <li class="navbar-items"><a href="./services.html">خدمات</a></li>
-            <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
-            <li class="navbar-items">
-              <a href="./contactUs.html">ارتباط با ما</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-    </div>
-    <main class="m-4 md:m-15 lg:mx-30">
-      <div class="md:my-50 my-30"></div>
-
-      <section id="search-box" class="max-w-[780px] w-full mx-auto px-4">
-        <div
-          class="flex flex-col justify-center items-center gap-12 md:gap-16 my-10 md:my-20"
+    <div class="relative overflow-hidden">
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <img
+          src="./assets/images/blogbg.svg"
+          alt=""
+          srcset=""
+          class="hidden sm:flex object-cover w-full object-top"
+        />
+        <img
+          src="./assets/images/blogbgmobile.svg"
+          alt=""
+          srcset=""
+          class="sm:hidden flex object-cover w-full object-top"
+        />
+      </div>
+      <div class="fixed top-0 left-0 w-full z-50 flex justify-center">
+        <header
+          class="relative m-4 md:m-15 lg:mx-30 p-4 flex justify-between items-center bg-white/10 backdrop-blur-md border border-white/16 rounded-[20px] z-50 w-full"
         >
-          <div class="flex flex-col gap-2 md:gap-6">
-            <p
-              class="text-txt-placeholder text-xs lg:text-xl font-normal text-center"
-            >
-              مرکز محتوای آموزشی منوا
-            </p>
-
-            <h1
-              class="text-txt-main text-xl lg:text-5xl font-bold text-center leading-relaxed"
-            >
-              راهنمای دیجیتال مارکتینگ و مدیریت منو برای رستوران‌ها
-            </h1>
+          <div class="flex gap-10 items-center">
+            <img
+              src="./assets/icons/logo.svg"
+              alt="menoa logo"
+              class="md:max-h-10"
+            />
+            <ul id="desktop-menu" class="hidden md:flex md:flex-row gap-10">
+              <li class="navbar-items">
+                <a href="./template.html">قالب‌ها</a>
+              </li>
+              <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+              <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+              <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+              <li class="navbar-items">
+                <a href="./contactUs.html">ارتباط با ما</a>
+              </li>
+            </ul>
           </div>
-          <div
-            class="flex flex-col justify-center items-center w-full gap-2 lg:gap-6"
-          >
-            <div
-              class="fillter gap-2 w-full group shadow-[0_0_20px_0_#B1BAD233]"
+          <div class="flex gap-4 items-center">
+            <button
+              type="button"
+              class="btn-signIn font-semibold text-sm max-h-8 md:max-h-10"
             >
-              <svg
-                class="text-txt-placeholder group-focus:text-txt-cta"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <a href="./login.html"> ورود | ثبت نام </a>
+            </button>
+            <img
+              id="menu-toggle-icon"
+              src="./assets/icons/navbarIcon.svg"
+              alt="navBar"
+              class="w-10 h-10 md:hidden cursor-pointer"
+            />
+          </div>
+
+          <div id="dropdown-menu" class="mobile-dropdown">
+            <ul class="mobile-dropdown-list">
+              <li class="navbar-items">
+                <a href="./template.html">قالب‌ها</a>
+              </li>
+              <li class="navbar-items"><a href="./plans.html">پلن‌ها</a></li>
+              <li class="navbar-items"><a href="./services.html">خدمات</a></li>
+              <li class="navbar-items"><a href="./blog.html">بلاگ</a></li>
+              <li class="navbar-items">
+                <a href="./contactUs.html">ارتباط با ما</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <main class="m-4 md:m-15 lg:mx-30">
+        <div class="md:my-50 my-30"></div>
+
+        <section id="search-box" class="max-w-[780px] w-full mx-auto px-4">
+          <div
+            class="flex flex-col justify-center items-center gap-12 md:gap-16 my-10 md:my-20"
+          >
+            <div class="flex flex-col gap-2 md:gap-6">
+              <p
+                class="text-txt-placeholder text-xs lg:text-xl font-normal text-center"
               >
-                <path
-                  d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M22 22L20 20"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                مرکز محتوای آموزشی منوا
+              </p>
 
-              <input
-                id="search-plans"
-                type="text"
-                placeholder="جستجو در مقالات..."
-                class="flex-1 bg-transparent outline-none focus:outline-surface-icon"
-              />
+              <h1
+                class="text-txt-main text-xl lg:text-5xl font-bold text-center leading-relaxed"
+              >
+                راهنمای دیجیتال مارکتینگ و مدیریت منو برای رستوران‌ها
+              </h1>
             </div>
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-2">
-              <button class="questions-fillter-blog">
-                <img src="./assets/icons/grow.svg" alt="" srcset="" />دیجیتال
-                مارکتینگ
-              </button>
-              <button class="questions-fillter-blog">
-                <img src="./assets/icons/shop.svg" alt="" srcset="" />مدیریت
-                رستوران
-              </button>
-              <button class="questions-fillter-blog">
-                <img
-                  src="./assets/icons/digital-menu.svg"
-                  alt=""
-                  srcset=""
-                />منوی دیجیتال
-              </button>
-              <button class="questions-fillter-blog">
-                <img src="./assets/icons/increse.svg" alt="" srcset="" />افزایش
-                فروش
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="-ml-4">
-        <div class="flex flex-col mt-20 lg:mt-30">
-          <h3
-            class="text-2xl text-center font-bold text-txt-main lg:text-4xl whitespace-nowrap w-full"
-          >
-            پر‌بازدید ترین مقالات ما
-          </h3>
-
-          <div
-            class="flex items-center gap-6 lg:gap-10 overflow-x-auto xl:overflow-visible w-full scrollbar-hide lg:justify-center"
-          >
             <div
-              class="flex flex-col relative p-3 bg-surface-elevated rounded-[20px] border border-[#9AA6C599] gap-3 w-73.5 h-111.25 lg:w-119.5 lg:h-127.25 border border-[#9AA6C599] shrink-0 mt-10"
+              class="flex flex-col justify-center items-center w-full gap-2 lg:gap-6"
             >
               <div
-                class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
+                class="fillter gap-2 w-full group shadow-[0_0_20px_0_#B1BAD233]"
               >
                 <svg
-                  class="w-13 h-13 lg:w-14 lg:h-14"
-                  viewBox="0 0 56 56"
+                  class="text-txt-placeholder group-focus:text-txt-cta"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <rect
-                    x="1"
-                    y="1"
-                    width="54"
-                    height="54"
-                    rx="27"
-                    fill="#5B562C"
-                  />
-                  <rect
-                    x="1"
-                    y="1"
-                    width="54"
-                    height="54"
-                    rx="27"
-                    stroke="#E5CE39"
-                    stroke-width="2"
-                  />
                   <path
-                    d="M28.2246 34.75V37.9"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
-                    d="M20.7246 43H35.7246V41.5C35.7246 39.85 34.3746 38.5 32.7246 38.5H23.7246C22.0746 38.5 20.7246 39.85 20.7246 41.5V43V43Z"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
-                    stroke-miterlimit="10"
-                  />
-                  <path
-                    d="M19.2246 43H37.2246"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
+                    d="M22 22L20 20"
+                    stroke="currentColor"
+                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  />
-                  <path
-                    d="M28 34C22.195 34 17.5 29.305 17.5 23.5V19C17.5 15.685 20.185 13 23.5 13H32.5C35.815 13 38.5 15.685 38.5 19V23.5C38.5 29.305 33.805 34 28 34Z"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M18.2046 27.475C17.0796 27.115 16.0896 26.455 15.3096 25.675C13.9596 24.175 13.0596 22.375 13.0596 20.275C13.0596 18.175 14.7096 16.525 16.8096 16.525H17.7846C17.4846 17.215 17.3346 17.98 17.3346 18.775V23.275C17.3346 24.775 17.6496 26.185 18.2046 27.475Z"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M37.7949 27.475C38.9199 27.115 39.9099 26.455 40.6899 25.675C42.0399 24.175 42.9399 22.375 42.9399 20.275C42.9399 18.175 41.2899 16.525 39.1899 16.525H38.2149C38.5149 17.215 38.6649 17.98 38.6649 18.775V23.275C38.6649 24.775 38.3499 26.185 37.7949 27.475Z"
-                    stroke="#E5CE39"
-                    stroke-width="2.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.9607 18.336L28.2287 18.084L29.3807 29.874L27.1127 30.126L25.9607 18.336Z"
-                    fill="#E5CE39"
                   />
                 </svg>
-              </div>
-              <div
-                class="w-full min-h-47.5 rounded-xl overflow-hidden shrink-0"
-              >
-                <img
-                  src="./assets/images/img6.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
+
+                <input
+                  id="search-plans"
+                  type="text"
+                  placeholder="جستجو در مقالات..."
+                  class="flex-1 bg-transparent outline-none focus:outline-surface-icon"
                 />
               </div>
-
-              <div class="flex flex-col gap-3 lg:flex-1 lg:justify-between">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn text-sm min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex relative flex-col p-3 bg-surface-elevated rounded-[20px] gap-3 w-73.5 h-111.25 border border-[#9AA6C599] shrink-0 mt-10"
-            >
-              <div
-                class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
-              >
-                <img src="./assets/icons/silverCup.svg" alt="" srcset="" />
-              </div>
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img8.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="flex flex-col gap-3">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn text-sm min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col relative p-3 bg-surface-elevated rounded-[20px] gap-3 w-73.5 h-111.25 border border-[#9AA6C599] shrink-0 mt-10"
-            >
-              <div
-                class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
-              >
-                <img src="./assets/icons/redcup.svg" alt="" srcset="" />
-              </div>
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img10.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="flex flex-col gap-3">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">افزایش فروش</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn text-sm min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-2">
+                <button class="questions-fillter-blog">
+                  <img src="./assets/icons/grow.svg" alt="" srcset="" />دیجیتال
+                  مارکتینگ
+                </button>
+                <button class="questions-fillter-blog">
+                  <img src="./assets/icons/shop.svg" alt="" srcset="" />مدیریت
+                  رستوران
+                </button>
+                <button class="questions-fillter-blog">
+                  <img
+                    src="./assets/icons/digital-menu.svg"
+                    alt=""
+                    srcset=""
+                  />منوی دیجیتال
+                </button>
+                <button class="questions-fillter-blog">
+                  <img
+                    src="./assets/icons/increse.svg"
+                    alt=""
+                    srcset=""
+                  />افزایش فروش
+                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="plans-details">
-        <div
-          class="flex flex-col justify-center items-center w-full mt-20 lg:mt-30"
-        >
-          <div
-            class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 lg:gap-8 w-full my-4 lg:my-8"
-          >
+        </section>
+        <section class="-ml-4">
+          <div class="flex flex-col mt-20 lg:mt-30">
             <h3
-              class="text-2xl font-bold text-txt-main lg:text-4xl whitespace-nowrap w-full"
+              class="text-2xl text-center font-bold text-txt-main lg:text-4xl whitespace-nowrap w-full"
             >
-              لیست مقالات
+              پر‌بازدید ترین مقالات ما
             </h3>
 
-            <div class="flex gap-2 lg:w-95">
-              <div class="dropdown relative w-full lg:w-100 lg:inline-block">
-                <button
-                  type="button"
-                  class="dropdown-toggle fillter group flex items-center justify-between gap-4 w-full"
+            <div
+              class="flex items-center gap-6 lg:gap-10 overflow-x-auto xl:overflow-visible w-full scrollbar-hide lg:justify-center"
+            >
+              <div
+                class="flex flex-col relative p-3 bg-surface-elevated rounded-[20px] border border-[#9AA6C599] gap-3 w-73.5 h-111.25 lg:w-119.5 lg:h-127.25 border border-[#9AA6C599] shrink-0 mt-10"
+              >
+                <div
+                  class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
                 >
-                  <div class="flex items-center gap-2">
+                  <svg
+                    class="w-13 h-13 lg:w-14 lg:h-14"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="54"
+                      height="54"
+                      rx="27"
+                      fill="#5B562C"
+                    />
+                    <rect
+                      x="1"
+                      y="1"
+                      width="54"
+                      height="54"
+                      rx="27"
+                      stroke="#E5CE39"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M28.2246 34.75V37.9"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.7246 43H35.7246V41.5C35.7246 39.85 34.3746 38.5 32.7246 38.5H23.7246C22.0746 38.5 20.7246 39.85 20.7246 41.5V43V43Z"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M19.2246 43H37.2246"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M28 34C22.195 34 17.5 29.305 17.5 23.5V19C17.5 15.685 20.185 13 23.5 13H32.5C35.815 13 38.5 15.685 38.5 19V23.5C38.5 29.305 33.805 34 28 34Z"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.2046 27.475C17.0796 27.115 16.0896 26.455 15.3096 25.675C13.9596 24.175 13.0596 22.375 13.0596 20.275C13.0596 18.175 14.7096 16.525 16.8096 16.525H17.7846C17.4846 17.215 17.3346 17.98 17.3346 18.775V23.275C17.3346 24.775 17.6496 26.185 18.2046 27.475Z"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M37.7949 27.475C38.9199 27.115 39.9099 26.455 40.6899 25.675C42.0399 24.175 42.9399 22.375 42.9399 20.275C42.9399 18.175 41.2899 16.525 39.1899 16.525H38.2149C38.5149 17.215 38.6649 17.98 38.6649 18.775V23.275C38.6649 24.775 38.3499 26.185 37.7949 27.475Z"
+                      stroke="#E5CE39"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M25.9607 18.336L28.2287 18.084L29.3807 29.874L27.1127 30.126L25.9607 18.336Z"
+                      fill="#E5CE39"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="w-full min-h-47.5 rounded-xl overflow-hidden shrink-0"
+                >
+                  <img
+                    src="./assets/images/img6.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-3 lg:flex-1 lg:justify-between">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
                     <svg
-                      class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
-                      viewBox="0 0 24 24"
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
                         stroke-miterlimit="10"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
                       <path
-                        d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                        d="M7.25977 4.785L8.03977 1.54504"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
                         stroke-miterlimit="10"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
                       <path
-                        d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                        d="M12.2852 4.79251L12.9902 1.53754"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
                         stroke-miterlimit="10"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
                       <path
-                        d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                        d="M5.77539 9H11.7754"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
                         stroke-miterlimit="10"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
                     </svg>
-
-                    <span class="selected-text whitespace-nowrap">
-                      دسته بندی
-                    </span>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
                   </div>
 
-                  <svg
-                    class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
-                    viewBox="0 0 18 18"
-                    fill="none"
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
                   >
-                    <path
-                      d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
+                    چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
+                  </h3>
 
-                <div
-                  class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
-                >
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
+                  <p
+                    class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
                   </div>
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
-                  </div>
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn text-sm min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
                   </div>
                 </div>
               </div>
-
-              <div class="dropdown relative w-full lg:inline-block">
-                <button
-                  type="button"
-                  class="dropdown-toggle fillter group flex items-center justify-between gap-4 w-full"
+              <div
+                class="flex relative flex-col p-3 bg-surface-elevated rounded-[20px] gap-3 w-73.5 h-111.25 border border-[#9AA6C599] shrink-0 mt-10"
+              >
+                <div
+                  class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
                 >
-                  <div class="flex items-center gap-2">
+                  <img src="./assets/icons/silverCup.svg" alt="" srcset="" />
+                </div>
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img8.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
                     <svg
-                      class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
-                      viewBox="0 0 24 24"
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.25977 4.785L8.03977 1.54504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn text-sm min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col relative p-3 bg-surface-elevated rounded-[20px] gap-3 w-73.5 h-111.25 border border-[#9AA6C599] shrink-0 mt-10"
+              >
+                <div
+                  class="absolute top-3 right-3 translate-x-1/2 -translate-y-1/2 z-10"
+                >
+                  <img src="./assets/icons/redcup.svg" alt="" srcset="" />
+                </div>
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img10.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.25977 4.785L8.03977 1.54504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">افزایش فروش</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-xs lg:text-sm text-justify"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-xs lg:text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn text-sm min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="plans-details">
+          <div
+            class="flex flex-col justify-center items-center w-full mt-20 lg:mt-30"
+          >
+            <div
+              class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 lg:gap-8 w-full my-4 lg:my-8"
+            >
+              <h3
+                class="text-2xl font-bold text-txt-main lg:text-4xl whitespace-nowrap w-full"
+              >
+                لیست مقالات
+              </h3>
+
+              <div class="flex gap-2 lg:w-95">
+                <div class="dropdown relative w-full lg:w-100 lg:inline-block">
+                  <button
+                    type="button"
+                    class="dropdown-toggle fillter group flex items-center justify-between gap-4 w-full"
+                  >
+                    <div class="flex items-center gap-2">
+                      <svg
+                        class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+
+                      <span class="selected-text whitespace-nowrap">
+                        دسته بندی
+                      </span>
+                    </div>
+
+                    <svg
+                      class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
+                      viewBox="0 0 18 18"
                       fill="none"
                     >
                       <path
-                        d="M3 7H21"
+                        d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
                         stroke="currentColor"
                         stroke-width="1.5"
                         stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
+                  >
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dropdown relative w-full lg:inline-block">
+                  <button
+                    type="button"
+                    class="dropdown-toggle fillter group flex items-center justify-between gap-4 w-full"
+                  >
+                    <div class="flex items-center gap-2">
+                      <svg
+                        class="w-5 h-5 text-txt-placeholder group-focus:text-txt-cta"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M3 7H21"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M6 12H18"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M10 17H14"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+
+                      <span class="selected-text whitespace-nowrap">
+                        مرتب سازی
+                      </span>
+                    </div>
+
+                    <svg
+                      class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
+                  >
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                    <div class="dropdown-item fillter cursor-pointer">
+                      گزینه ها
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 items-start"
+            >
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img8.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-3 min-w-0 grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
                       />
                       <path
-                        d="M6 12H18"
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
                         stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                       <path
-                        d="M10 17H14"
+                        d="M7.25977 4.785L8.03977 1.54504"
                         stroke="currentColor"
-                        stroke-width="1.5"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
                         stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img6.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 min-w-0 grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.25781 8.41504V11.7825C2.25781 15.15 3.60781 16.5 6.97531 16.5H11.0178C14.3853 16.5 15.7353 15.15 15.7353 11.7825V8.41504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.00036 9C10.3729 9 11.3854 7.8825 11.2504 6.51L10.7554 1.5H7.25286L6.75036 6.51C6.61536 7.8825 7.62786 9 9.00036 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.7321 9C15.2471 9 16.3571 7.77 16.2071 6.2625L15.9971 4.2C15.7271 2.25 14.9771 1.5 13.0121 1.5H10.7246L11.2496 6.7575C11.3771 7.995 12.4946 9 13.7321 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.22979 9C5.46729 9 6.58479 7.995 6.70479 6.7575L6.86979 5.1L7.22979 1.5H4.94229C2.97729 1.5 2.22729 2.25 1.95729 4.2L1.75479 6.2625C1.60479 7.77 2.71479 9 4.22979 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 12.75C7.7475 12.75 7.125 13.3725 7.125 14.625V16.5H10.875V14.625C10.875 13.3725 10.2525 12.75 9 12.75Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">
+                      مدیریت رستوران
+                    </p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    ۷ ایده ساده برای افزایش فروش رستوران با منوی دیجیتال
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img10.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 min-w-0 flex-grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.25977 4.785L8.03977 1.54504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    منوی دیجیتال چیست و چه تفاوتی با منوی PDF دارد؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img9.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 min-w-0 flex-grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.25977 4.785L8.03977 1.54504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img7.webp"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 min-w-0 flex-grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.25977 4.785L8.03977 1.54504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.2852 4.79251L12.9902 1.53754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.77539 9H11.7754"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.02539 12H11.0254"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
+                  </div>
+
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
+                  >
+                    چطور با پیشنهادهای ویژه (Upsell) میانگین سفارش را بیشتر
+                    کنیم؟
+                  </h3>
+
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              >
+                <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src="./assets/images/img11.webp"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 min-w-0 grow">
+                  <div
+                    class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max"
+                  >
+                    <svg
+                      class="text-primary"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.25781 8.41504V11.7825C2.25781 15.15 3.60781 16.5 6.97531 16.5H11.0178C14.3853 16.5 15.7353 15.15 15.7353 11.7825V8.41504"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.00036 9C10.3729 9 11.3854 7.8825 11.2504 6.51L10.7554 1.5H7.25286L6.75036 6.51C6.61536 7.8825 7.62786 9 9.00036 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.7321 9C15.2471 9 16.3571 7.77 16.2071 6.2625L15.9971 4.2C15.7271 2.25 14.9771 1.5 13.0121 1.5H10.7246L11.2496 6.7575C11.3771 7.995 12.4946 9 13.7321 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.22979 9C5.46729 9 6.58479 7.995 6.70479 6.7575L6.86979 5.1L7.22979 1.5H4.94229C2.97729 1.5 2.22729 2.25 1.95729 4.2L1.75479 6.2625C1.60479 7.77 2.71479 9 4.22979 9Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 12.75C7.7475 12.75 7.125 13.3725 7.125 14.625V16.5H10.875V14.625C10.875 13.3725 10.2525 12.75 9 12.75Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                     </svg>
 
-                    <span class="selected-text whitespace-nowrap">
-                      مرتب سازی
-                    </span>
+                    <p class="font-medium text-sm text-primary">
+                      مدیریت رستوران
+                    </p>
                   </div>
 
-                  <svg
-                    class="dropdown-arrow w-4 h-4 transition-transform duration-300 text-txt-placeholder group-focus:text-txt-cta"
-                    viewBox="0 0 18 18"
-                    fill="none"
+                  <h3
+                    class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
                   >
-                    <path
-                      d="M14.94 6.71L10.05 11.60C9.47 12.18 8.52 12.18 7.95 11.60L3.06 6.71"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
+                    ۷ ایده ساده برای افزایش فروش رستوران با منوی دیجیتال
+                  </h3>
 
-                <div
-                  class="dropdown-menu absolute top-full left-0 mt-2 hidden rounded-lg shadow-lg min-w-full"
-                >
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
+                  <p
+                    class="text-txt-caption font-normal text-sm text-justify my-4"
+                  >
+                    منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
+                    فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center w-full">
+                    <img src="./assets/icons/clock.svg" alt="" srcset="" />
+                    <p
+                      class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
+                    >
+                      ۵ دقیقه مطالعه
+                    </p>
                   </div>
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
-                  </div>
-                  <div class="dropdown-item fillter cursor-pointer">
-                    گزینه ها
+                  <div class="flex justify-center items-center w-full">
+                    <button class="btn-signIn min-w-32 w-full">
+                      <a href="./blog-detail.html">مطالعه مقاله</a>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+        <section id="emailBox">
           <div
-            class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 items-start"
+            class="flex flex-col p-3 lg:p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-6 items-center max-w-196 my-20 lg:my-30 mx-auto"
           >
-            <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+            <h3 class="text-txt-main text-lg lg:text-2xl font-bold">
+              جدیدترین مقالات را از دست ندهید
+            </h3>
+
+            <p
+              class="text-txt-placeholder font-normal text-xs lg:text-sm text-justify"
             >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img8.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
+              با منوا می‌توانید منوی آنلاین حرفه‌ای برای رستوران یا کافه خود
+              ایجاد کنید و سفارش‌های مشتریان را به‌صورت آنلاین مدیریت نمایید.
+            </p>
 
-              <div class="flex flex-col gap-3 min-w-0 grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
             <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
+              class="bg-surface py-2 px-3 flex focus-within:border-primary rounded-lg border border-surface-icon text-txt-placeholder focus-within:text-primary whitespace-nowrap gap-2 w-full"
             >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img6.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="flex flex-col gap-3 min-w-0 grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.25781 8.41504V11.7825C2.25781 15.15 3.60781 16.5 6.97531 16.5H11.0178C14.3853 16.5 15.7353 15.15 15.7353 11.7825V8.41504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9.00036 9C10.3729 9 11.3854 7.8825 11.2504 6.51L10.7554 1.5H7.25286L6.75036 6.51C6.61536 7.8825 7.62786 9 9.00036 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.7321 9C15.2471 9 16.3571 7.77 16.2071 6.2625L15.9971 4.2C15.7271 2.25 14.9771 1.5 13.0121 1.5H10.7246L11.2496 6.7575C11.3771 7.995 12.4946 9 13.7321 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M4.22979 9C5.46729 9 6.58479 7.995 6.70479 6.7575L6.86979 5.1L7.22979 1.5H4.94229C2.97729 1.5 2.22729 2.25 1.95729 4.2L1.75479 6.2625C1.60479 7.77 2.71479 9 4.22979 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 12.75C7.7475 12.75 7.125 13.3725 7.125 14.625V16.5H10.875V14.625C10.875 13.3725 10.2525 12.75 9 12.75Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">مدیریت رستوران</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  ۷ ایده ساده برای افزایش فروش رستوران با منوی دیجیتال
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
-            >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img10.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="flex flex-col gap-3 min-w-0 flex-grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  منوی دیجیتال چیست و چه تفاوتی با منوی PDF دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
-            >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img9.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="flex flex-col gap-3 min-w-0 flex-grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چرا هر رستورانی به منوی دیجیتال نیاز دارد؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
-            >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img7.webp"
-                  alt=""
-                  class="h-full w-full object-cover"
-                />
-              </div>
-              <div class="flex flex-col gap-3 min-w-0 flex-grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.4478 5.07001L13.9203 15.2175C13.7403 15.975 13.0654 16.5 12.2854 16.5H2.43034C1.29784 16.5 0.487853 15.39 0.825353 14.3025L3.98285 4.16254C4.20035 3.45754 4.85286 2.96997 5.58786 2.96997H14.8128C15.5253 2.96997 16.1179 3.40497 16.3654 4.00497C16.5079 4.32747 16.5378 4.69501 16.4478 5.07001Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M12 16.5H15.585C16.5525 16.5 17.31 15.6825 17.2425 14.715L16.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.25977 4.785L8.03977 1.54504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.2852 4.79251L12.9902 1.53754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.77539 9H11.7754"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M5.02539 12H11.0254"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="font-medium text-sm text-primary">منوی دیجیتال</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  چطور با پیشنهادهای ویژه (Upsell) میانگین سفارش را بیشتر کنیم؟
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-4 h-full"
-            >
-              <div class="w-full h-47.5 rounded-xl overflow-hidden shrink-0">
-                <img
-                  src="./assets/images/img11.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="flex flex-col gap-3 min-w-0 grow">
-                <div class="flex bg-[#E6C89C14] p-2 rounded-lg gap-2 max-w-max">
-                  <svg
-                    class="text-primary"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.25781 8.41504V11.7825C2.25781 15.15 3.60781 16.5 6.97531 16.5H11.0178C14.3853 16.5 15.7353 15.15 15.7353 11.7825V8.41504"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9.00036 9C10.3729 9 11.3854 7.8825 11.2504 6.51L10.7554 1.5H7.25286L6.75036 6.51C6.61536 7.8825 7.62786 9 9.00036 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.7321 9C15.2471 9 16.3571 7.77 16.2071 6.2625L15.9971 4.2C15.7271 2.25 14.9771 1.5 13.0121 1.5H10.7246L11.2496 6.7575C11.3771 7.995 12.4946 9 13.7321 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M4.22979 9C5.46729 9 6.58479 7.995 6.70479 6.7575L6.86979 5.1L7.22979 1.5H4.94229C2.97729 1.5 2.22729 2.25 1.95729 4.2L1.75479 6.2625C1.60479 7.77 2.71479 9 4.22979 9Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 12.75C7.7475 12.75 7.125 13.3725 7.125 14.625V16.5H10.875V14.625C10.875 13.3725 10.2525 12.75 9 12.75Z"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-
-                  <p class="font-medium text-sm text-primary">مدیریت رستوران</p>
-                </div>
-
-                <h3
-                  class="text-txt-main text-base font-semibold lg:text-lg lg:font-bold"
-                >
-                  ۷ ایده ساده برای افزایش فروش رستوران با منوی دیجیتال
-                </h3>
-
-                <p
-                  class="text-txt-caption font-normal text-sm text-justify my-4"
-                >
-                  منوی دیجیتال فقط یک منو نیست؛ یک ابزار قدرتمند برای افزایش
-                  فروش، مدیریت سفارش‌ها و بهبود تجربه مشتری است
-                </p>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <div class="flex items-center w-full">
-                  <img src="./assets/icons/clock.svg" alt="" srcset="" />
-                  <p
-                    class="font-normal text-sm text-txt-placeholder lg:font-medium py-2 px-2 rounded-lg w-full"
-                  >
-                    ۵ دقیقه مطالعه
-                  </p>
-                </div>
-                <div class="flex justify-center items-center w-full">
-                  <button class="btn-signIn min-w-32 w-full">
-                    <a href="./blog-detail.html">مطالعه مقاله</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="emailBox">
-        <div
-          class="flex flex-col p-3 lg:p-4 bg-surface-elevated rounded-[20px] border border-surface-icon gap-6 items-center max-w-196 my-20 lg:my-30 mx-auto"
-        >
-          <h3 class="text-txt-main text-lg lg:text-2xl font-bold">
-            جدیدترین مقالات را از دست ندهید
-          </h3>
-
-          <p
-            class="text-txt-placeholder font-normal text-xs lg:text-sm text-justify"
-          >
-            با منوا می‌توانید منوی آنلاین حرفه‌ای برای رستوران یا کافه خود ایجاد
-            کنید و سفارش‌های مشتریان را به‌صورت آنلاین مدیریت نمایید.
-          </p>
-
-          <div
-            class="bg-surface py-2 px-3 flex focus-within:border-primary rounded-lg border border-surface-icon text-txt-placeholder focus-within:text-primary whitespace-nowrap gap-2 w-full"
-          >
-            <input
-              id="search-plans"
-              type="text"
-              placeholder="ایمیل خود را وارد کنید ..."
-              class="flex-1 bg-transparent outline-none focus:outline-surface-icon"
-            />
-            <button class="rounded-lg bg-btn-secondary hover:bg-primary">
-              <img
-                src="./assets/icons/send.svg"
-                alt=""
-                srcset=""
-                class="md:hidden m-2"
+              <input
+                id="search-plans"
+                type="text"
+                placeholder="ایمیل خود را وارد کنید ..."
+                class="flex-1 bg-transparent outline-none focus:outline-surface-icon"
               />
-              <div
-                class="hidden text-white md:block text-sm font-semibold my-1 mx-3"
-              >
-                ارسال ایمیل
-              </div>
-            </button>
+              <button class="rounded-lg bg-btn-secondary hover:bg-primary">
+                <img
+                  src="./assets/icons/send.svg"
+                  alt=""
+                  srcset=""
+                  class="md:hidden m-2"
+                />
+                <div
+                  class="hidden text-white md:block text-sm font-semibold my-1 mx-3"
+                >
+                  ارسال ایمیل
+                </div>
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-
+        </section>
+      </main>
+    </div>
     <footer class="relative pt-10 min-h-140.75 max-h-327.75 overflow-hidden">
       <div class="absolute inset-0 z-0 pointer-events-none">
         <img
